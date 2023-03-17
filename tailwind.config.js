@@ -1,11 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      fontFamily: {
+        tech: ["tech", "cursive"],
+        display: ["Bungee Inline", "cursive"],
+        poppins: ["Poppins", "cursive"],
+      },
       colors: {
         saffron: {
           50: "#fffceb",
@@ -79,6 +85,9 @@ module.exports = {
           800: "#0073e0",
           900: "#012a56",
         },
+      },
+      backgroundImage: {
+        logoBg: "url('/Images/logobg.png')",
       },
     },
   },
