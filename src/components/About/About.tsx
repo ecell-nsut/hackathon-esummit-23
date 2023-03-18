@@ -1,5 +1,6 @@
 type Props = {};
 import Image from "next/image";
+import bgLogo from "public/Images/logo.svg";
 import AboutImg from "/public/Images/AboutImage.svg";
 
 const About = (props: Props) => {
@@ -20,8 +21,13 @@ const About = (props: Props) => {
             the middle of text
           </p>
         </div>
-        <div className="image max-w-[500px]  flex justify-center text-center bg-logoBg bg-cover">
-          <Image src={AboutImg} alt="abt-img" />
+        <div className="image max-w-[500px]  flex justify-center text-center  bg-cover contrast-[1.1]">
+          <Image
+            src={bgLogo}
+            alt=""
+            className="absolute w-full h-full opacity-10 scale-125"
+          />
+          <Image src={AboutImg} alt="abt-img" className="z-10" />
         </div>
       </div>
 
@@ -50,7 +56,7 @@ const About = (props: Props) => {
               className=" bg-gray-200 rounded-lg overflow-hidden"
             />
           </div>
-          <div className="row-span-2 bg-gray-200 rounded-lg overflow-hidden">
+          <div className="row-span-2 bg-gray-200 rounded-lg overflow-hidden ">
             <Image
               src={AboutImg}
               alt="abt-img"

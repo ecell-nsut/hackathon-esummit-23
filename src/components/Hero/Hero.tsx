@@ -3,6 +3,7 @@ import { Bungee_Inline, Orbitron } from "@next/font/google";
 import Image from "next/image";
 import { BsDiscord } from "react-icons/bs";
 import HeroImg from "/public/Images/HeroImage.svg";
+import BgLogo from "/public/Images/logo.svg";
 const orbitron = Orbitron({ subsets: ["latin"] });
 const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400" });
 
@@ -10,7 +11,7 @@ const Hero = (props: Props) => {
   return (
     <div className="max-w-7xl m-auto  min-h-[60vh] flex justify-between items-center p-4 flex-col sm:flex-row my-12 gap-10">
       <div
-        className={`content ${orbitron.className} text-[58px] leading-[58px] md:text-[60px] md:leading-[60px] lg:text-[82px] text-7xl lg:leading-[82px] font-extrabold text-teal-500 `}
+        className={`content ${orbitron.className} text-[57px] leading-[58px] md:text-[60px] md:leading-[60px] lg:text-[82px] text-7xl lg:leading-[82px] font-extrabold text-teal-500 `}
       >
         <div className="innerContent flex flex-col items-start ">
           Welcome <br />
@@ -28,8 +29,13 @@ const Hero = (props: Props) => {
           </button>
         </div>
       </div>
-      <div className="image   flex justify-center text-center bg-logoBg bg-cover">
-        <Image src={HeroImg} alt="hero_image" />
+      <div className="image   flex justify-center text-center  bg-cover  contrast-[1.1] relative">
+        <Image
+          src={BgLogo}
+          alt=""
+          className="absolute w-full h-full opacity-20 scale-110"
+        />
+        <Image src={HeroImg} alt="hero_image" className="z-10" />
       </div>
     </div>
   );

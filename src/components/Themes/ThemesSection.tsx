@@ -7,7 +7,7 @@ const ThemesSection = (props: Props) => {
   return (
     <div className="max-w-7xl m-auto flex flex-col py-10 px-4">
       <h1
-        className={`${bungee.className} text-center my-12 text-4xl md:text-6xl    text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text`}
+        className={`${bungee.className} text-center my-24 text-4xl md:text-4xl    text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text`}
       >
         Themes
       </h1>

@@ -12,6 +12,23 @@ module.exports = {
         display: ["Bungee Inline", "cursive"],
         poppins: ["Poppins", "cursive"],
       },
+      keyframes: {
+        rotate: {
+          from: {
+            rotate: "0deg",
+          },
+
+          "50%": {
+            scale: "2 1.5",
+          },
+          to: {
+            scale: "1 1",
+          },
+        },
+      },
+      animation: {
+        rotate: "rotate 20s  infinite ",
+      },
       colors: {
         saffron: {
           50: "#fffceb",
