@@ -26,13 +26,13 @@ const Navbar = (props: Props) => {
             <a href="#about"> Sponsors</a>
           </li>
           <li>
-            <a href="#about">TimeLine</a>
+            <a href="#timeline">TimeLine</a>
           </li>
           <li>
-            <a href="#about">Team</a>
+            <a href="#tracks">Tracks</a>
           </li>
           <li>
-            <a href="#about">Contact Us</a>
+            <a href="#contact">Contact Us</a>
           </li>
         </ul>
         <div

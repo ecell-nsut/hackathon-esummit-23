@@ -1,21 +1,114 @@
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
 import { Bungee_Inline } from "@next/font/google";
+import { A11y, Autoplay, Navigation } from "swiper";
+import { SwiperButtonNxt, SwiperButtonPre } from "./SwiperButton";
 import ThemeCard from "./ThemeCard";
 const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400" });
 type Props = {};
 
 const ThemesSection = (props: Props) => {
+  const slides = [
+    {
+      url: "/Images/ai.svg",
+      name: "AI",
+    },
+    {
+      url: "/Images/ML.svg",
+      name: "ML",
+    },
+    {
+      url: "/Images/iot.svg",
+      name: "IOT",
+    },
+    {
+      url: "/Images/ai.svg",
+      name: "AI",
+    },
+    {
+      url: "/Images/ML.svg",
+      name: "ML",
+    },
+    {
+      url: "/Images/iot.svg",
+      name: "IOT",
+    },
+    {
+      url: "/Images/ai.svg",
+      name: "AI",
+    },
+    {
+      url: "/Images/ML.svg",
+      name: "ML",
+    },
+    {
+      url: "/Images/iot.svg",
+      name: "IOT",
+    },
+  ];
+
   return (
-    <div className="max-w-7xl m-auto flex flex-col py-10 px-4">
+    <div className=" m-auto flex flex-col py-10 px-4" id="tracks">
       <h1
         className={`${bungee.className} text-center my-24 text-4xl md:text-4xl    text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text`}
       >
         Themes
       </h1>
-      <div className="flex w-full justify-betwen flex-wrap items-center gap-20 justify-center">
-        <ThemeCard src="/Images/ai.svg" name="AI" />
-        <ThemeCard src="/Images/ML.svg" name="ML" />
-        <ThemeCard src="/Images/iot.svg" name="iot" />
+      <div className="w-full">
+        <Swiper
+          loop={true}
+          slidesPerView="auto"
+          centeredSlides={true}
+          spaceBetween={30}
+          grabCursor={true}
+          breakpoints={{
+            100: {
+              slidesPerView: 1,
+            },
+            649: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            859: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1259: {
+              slidesPerView: 5,
+              spaceBetween: 40,
+            },
+          }}
+          modules={[Autoplay, Navigation, A11y]}
+          className="mySwiper "
+        >
+          <div className=" absolute z-10 top-0 left-0 h-full flex">
+            <SwiperButtonPre className={"w-[60px]"} />
+          </div>
+          <div className=" absolute z-10 top-0 right-0 h-full flex">
+            <SwiperButtonNxt className={"w-[60px]"} />
+          </div>
+          {slides.map((sld: any, i: any) => {
+            return (
+              <SwiperSlide key={i}>
+                <div className="flex justify-center">
+                  <ThemeCard src={sld.url} name={sld.name} />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
+      <div className="flex w-full justify-betwen flex-wrap items-center gap-20 justify-center"></div>
     </div>
   );
 };

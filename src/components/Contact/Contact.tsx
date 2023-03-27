@@ -6,7 +6,7 @@ type Props = {};
 const Contact = (props: Props) => {
   return (
     <>
-      <div className="max-w-screen-md mx-auto mt-20 px-4">
+      <div className="max-w-screen-md mx-auto pt-20 px-4" id="contact">
         <div className="text-center mb-16">
           <h3
             className={`${bungee.className} text-white text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight `}
