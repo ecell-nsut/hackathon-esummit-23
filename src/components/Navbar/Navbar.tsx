@@ -45,34 +45,34 @@ const Navbar = (props: Props) => {
         </div>
       </div>
       <div
-        className={`bg-gradient-to-r from-[#96969621] via-[#ffffff29] to-[#96969621] ${
+        className={`bg-gradient-to-r from-[#96969621] via-[#1d1111cb] to-[#96969621] ${
           showmenu ? "h-52" : "h-0"
-        } transition-all duration-300 rounded-lg  overflow-hidden `}
+        } transition-all duration-300 rounded-lg w-full absolute top-30 overflow-hidden `}
       >
-        <ul className="flex-col items-center flex  justify-between py-6 h-full text-white">
-          <li className="hover:opacity-70 transition-all">
+        <ul className="flex-col items-center flex  justify-between py-6 h-full  text-white font-semibold ">
+          <li className="hover:scale-105 duration-150  transition-all">
             <a onClick={() => setShowMenu(false)} href="#about">
               About Us
             </a>
           </li>
-          <li className="hover:opacity-70 transition-all">
+          <li className="hover:scale-105 duration-150  transition-all">
             <a onClick={() => setShowMenu(false)} href="#about">
               {" "}
               Sponsors
             </a>
           </li>
-          <li className="hover:opacity-70 transition-all">
-            <a onClick={() => setShowMenu(false)} href="#about">
+          <li className="hover:scale-105 duration-150  transition-all">
+            <a onClick={() => setShowMenu(false)} href="#timeline">
               TimeLine
             </a>
           </li>
-          <li className="hover:opacity-70 transition-all">
-            <a onClick={() => setShowMenu(false)} href="#about">
-              Team
+          <li className="hover:scale-105 duration-150  transition-all">
+            <a onClick={() => setShowMenu(false)} href="#tracks">
+              Tracks
             </a>
           </li>
-          <li className="hover:opacity-70 transition-all">
-            <a onClick={() => setShowMenu(false)} href="#about">
+          <li className="hover:scale-105 duration-150  transition-all">
+            <a onClick={() => setShowMenu(false)} href="#contact">
               Contact Us
             </a>
           </li>
