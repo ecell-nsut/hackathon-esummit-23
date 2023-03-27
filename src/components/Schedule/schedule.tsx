@@ -7,7 +7,7 @@ type Props = {};
 
 const Schedule = (props: Props) => {
   return (
-    <div className="max-w-7xl m-auto">
+    <div className="max-w-7xl m-auto pt-20" id="timeline">
       <h1
         className={`${bungee.className} text-center my-24 text-4xl md:text-4xl    text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text`}
       >

@@ -6,7 +6,10 @@ import AboutImg from "/public/Images/AboutImage.svg";
 const About = (props: Props) => {
   return (
     <>
-      <div className="max-w-7xl m-auto  min-h-[60vh] flex justify-between items-center p-4 flex-col md:flex-row-reverse my-12 gap-10">
+      <div
+        className="max-w-7xl m-auto  min-h-[60vh] flex justify-between items-center p-4 flex-col md:flex-row-reverse my-12 gap-10"
+        id="about"
+      >
         <div className={`content  max-w-[430px]`}>
           <span className="bg-gradient-to-tr from-purple-500 font-medium text-2xl text-transparent to-teal-500 bg-clip-text">
             About
