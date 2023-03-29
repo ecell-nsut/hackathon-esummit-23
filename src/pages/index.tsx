@@ -4,6 +4,7 @@ import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
 import Schedule from "../components/Schedule/schedule";
+import Sponse from "../components/Sponser/Sponse";
 import ThemesSection from "../components/Themes/ThemesSection";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <ThemesSection />
       <Schedule />
+      <Sponse />
       <Contact />
       <Footer />
     </>
