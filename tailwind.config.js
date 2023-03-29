@@ -26,6 +26,27 @@ module.exports = {
           },
         },
       },
+      dropShadow: {
+        bold: "black 5px 5px 1px",
+        semibold: "black 3px 3px 1px",
+        lightbold: "black 2.5px 2.5px 0.5px",
+        lightestbold: "black 1px 1px 2px",
+        lowGlowtext: "rgba(255, 255, 255, 0.6) 0px 0px 10px ",
+        lowGlow: "rgba(255, 255, 255, 0.3) 0px 0px 20px ",
+        glow: "rgba(255, 255, 255, 0.6) 0px 0px 30px",
+      },
+      boxShadow: {
+        lowlit:
+          "0px 0px 5px 1px #D3BAFF, inset 0px 0px 10px 5px rgba(255, 255, 255, 0.2)",
+
+        extrasoft: "0px 0px 6px 5px rgba(0, 0, 0, 0.2)",
+        soft: "0px 0px 6px 5px rgba(0, 0, 0, 0.2)",
+        lowGlow:
+          "0px 0px 50px 5px rgba(255, 255, 255, 0.3), inset 0px 0px 50px 5px rgba(255, 255, 255, 0.2)",
+        glow: "0px 0px 50px 5px rgba(255, 255, 255, 0.6), inset 0px 0px 50px 5px rgba(255, 255, 255, 0.5) ",
+        glowbig:
+          "0px -5px 60px 10px rgba(255, 255, 255, 0.6), inset 0px 0px 50px 10px rgba(255, 255, 255, 0.5) ",
+      },
       animation: {
         rotate: "rotate 20s  infinite ",
       },
