@@ -22,13 +22,34 @@ const Hero = (props: Props) => {
           </span>
           <button
             className="font-sans flex items-center justify-center gap-2 bg-[#5c35d156] w-full text-white text-lg font-medium
-           rounded-full px-3 py-1 mt-8 hover:shadow-md hover:shadow-[#9179da56] active:shadow-none"
+           rounded-full px-3 py-1 mt-8 hover:shadow-md hover:shadow-[#9179da56] active:shadow-none "
           >
             <BsDiscord />
             Join Discord{" "}
           </button>
+          <a
+            href="https://guide.devfolio.co/organizers/apply-with-devfolio-integration"
+            target="_blank"
+            className="w-full"
+            rel="noreferrer"
+          >
+            <button
+              className="font-sans flex items-center justify-center gap-2 bg-[#2269FB] w-full text-white text-lg font-medium
+           rounded-full px-3  mt-8 hover:shadow-md hover:shadow-[#9179da56] active:shadow-none btnani overflow-hidden"
+            >
+              <Image
+                src="/Images/devfolioicon-nobg.png"
+                width={40}
+                height={40}
+                className=" "
+                alt=""
+              />
+              Apply With Devfolio{" "}
+            </button>
+          </a>
         </div>
       </div>
+      z
       <div className="image   flex justify-center text-center  bg-cover  contrast-[1.1] relative">
         <Image
           src={BgLogo}
