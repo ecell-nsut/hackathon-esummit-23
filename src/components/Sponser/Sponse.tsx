@@ -20,7 +20,10 @@ const sponse = [
 ];
 const Sponse = () => {
   return (
-    <div className="min-h-[60vh] p-10 md:px-20 lg:px-28 w-full flex flex-col  items-center mb-10">
+    <div
+      className="min-h-[60vh] p-10 md:px-20 lg:px-28 w-full flex flex-col  items-center mb-10"
+      id="sponser"
+    >
       <h1
         className={`${bungee.className} text-center  mt-20 mb-10 text-4xl md:text-4xl    text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text  `}
       >
