@@ -23,7 +23,7 @@ const Navbar = (props: Props) => {
             <a href="#about">About Us</a>
           </li>
           <li>
-            <a href="#about"> Sponsors</a>
+            <a href="#sponser"> Sponsors</a>
           </li>
           <li>
             <a href="#timeline">TimeLine</a>
@@ -56,7 +56,7 @@ const Navbar = (props: Props) => {
             </a>
           </li>
           <li className="hover:scale-105 duration-150  transition-all">
-            <a onClick={() => setShowMenu(false)} href="#about">
+            <a onClick={() => setShowMenu(false)} href="#sponser">
               {" "}
               Sponsors
             </a>
