@@ -37,24 +37,34 @@ const Sponse = () => {
             GOLD SPONSERS
           </h1>
           <div className="flex flex-col justify-center lg:justify-around items-center  lg:flex-row gap-4">
-            <div className="max-w-[400px] lg:max-w-[500px] flex justify-center items-center w-full bg-yellow-300 h-[100px] rounded-3xl bg-opacity-[0.07] drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300">
+            <a
+              href="https://devfolio.co"
+              target="_blank"
+              rel="noreferrer"
+              className="max-w-[400px] lg:max-w-[500px] flex justify-center items-center w-full bg-yellow-300 h-[100px] rounded-3xl bg-opacity-[0.07] drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300"
+            >
               <Image
-                src="/Images/Sponsers/devfolio.svg"
+                src="/Images/Sponsers/Devfolio_Logo-White.svg"
                 width={100}
                 height={100}
                 className="max-w-[300px] w-[70%]"
-                alt=""
+                alt="DEVFOLIO LOGO"
               />
-            </div>
-            <div className="max-w-[400px] lg:max-w-[500px] flex justify-center w-full items-center bg-yellow-300 h-[100px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300">
+            </a>
+            <a
+              href="https://polygon.technology/"
+              target="_blank"
+              rel="noreferrer"
+              className="max-w-[400px] lg:max-w-[500px] flex justify-center w-full items-center bg-yellow-300 h-[100px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300"
+            >
               <Image
-                src="/Images/Sponsers/polygon.svg"
+                src="/Images/Sponsers/Polygon_Logo-White.svg"
                 width={100}
                 height={100}
                 className=" max-w-[300px] w-[70%]"
-                alt=""
+                alt="POLYGON LOGO"
               />
-            </div>
+            </a>
           </div>
         </div>
         <div className="w-full">
@@ -66,33 +76,48 @@ const Sponse = () => {
 
           <div className="flex flex-col lg:flex-row w-full ">
             <div className="flex flex-col justify-center lg:justify-between items-center w-full lg:flex-row gap-4">
-              <div className="max-w-[400px] flex justify-center w-full items-center bg-slate-300 h-[100px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300">
+              <a
+                href="https://solana.com"
+                target="_blank"
+                rel="noreferrer"
+                className="max-w-[400px] flex justify-center w-full items-center bg-slate-300 h-[100px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300"
+              >
                 <Image
-                  src="/Images/Sponsers/solana.svg"
+                  src="/Images/Sponsers/Solana Dark.svg"
                   width={100}
                   height={100}
                   className="max-w-[300px] w-[70%]"
-                  alt=""
+                  alt="SOLANA LOGO"
                 />
-              </div>
-              <div className="max-w-[400px] flex justify-center w-full items-center bg-slate-300 h-[100px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300">
+              </a>
+              <a
+                href="https://replit.com"
+                target="_blank"
+                rel="noreferrer"
+                className="max-w-[400px] flex justify-center w-full items-center bg-slate-300 h-[100px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300"
+              >
                 <Image
-                  src="/Images/Sponsers/replit.svg"
+                  src="/Images/Sponsers/logo-light-text-bg.svg"
                   width={100}
                   height={100}
                   className="max-w-[300px] w-[70%]"
-                  alt=""
+                  alt="“REPLIT LOGO"
                 />
-              </div>
-              <div className=" max-w-[400px] flex justify-center w-full items-center bg-slate-300 h-[100px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300">
+              </a>
+              <a
+                href="https://filecoin.io"
+                target="_blank"
+                rel="noreferrer"
+                className=" max-w-[400px] flex justify-center w-full items-center bg-slate-300 h-[100px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300"
+              >
                 <Image
-                  src="/Images/Sponsers/filecon.svg"
+                  src="/Images/Sponsers/Filecoin Coloured White Text-1.svg"
                   width={100}
                   height={100}
                   className="max-w-[300px] w-[70%]"
-                  alt=""
+                  alt="FILECOIN LOGO"
                 />
-              </div>
+              </a>
             </div>
           </div>
         </div>

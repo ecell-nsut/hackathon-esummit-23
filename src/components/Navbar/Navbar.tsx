@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import Image from "next/image";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import eLogo from "/public/Images/elogo.svg";
 import Logo from "/public/Images/logo.svg";
 
 const inter = Inter({ subsets: ["latin"], weight: "400" });
@@ -13,8 +14,16 @@ const Navbar = (props: Props) => {
   return (
     <div className="w-screen pt-6 px-2">
       <div className="max-w-7xl bg-gradient-to-r from-[#96969621] via-[#ffffff29] to-[#96969621] bg-opacity-20  h-20 m-auto  rounded-lg  flex items-center justify-between px-6">
-        <div className="logo h-full">
-          <Image src={Logo} alt="logo" className="h-full" />
+        <div className="h-full flex justify-center ">
+          <div className="logo h-full ">
+            <Image src={Logo} alt="logo" className="h-full" />
+          </div>
+          <div className="logo h-20 py-1  flex flex-col ">
+            <Image src={eLogo} alt="logo" className="h-[82%] w-[90px]" />
+            <div className="text-[10px] text-center font-bold text-yellow-600 ">
+              eCell-NSUT
+            </div>
+          </div>
         </div>
         <ul
           className={`sm:flex hidden nav-links  grow justify-around text-md text-white  ${inter.className}`}
