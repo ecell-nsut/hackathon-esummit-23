@@ -148,7 +148,7 @@ html {
   width: 20px;
   animation: mymove 5s infinite;
   color: black;
-  box-shadow: 0px 0px 20px 10px #99cbfa, inset 5em 1em #99cbfa;
+  box-shadow: 0px 0px 20px 10px #67abeb, inset 5em 1em #67abeb;
   opacity: 0.5;
 }
 
