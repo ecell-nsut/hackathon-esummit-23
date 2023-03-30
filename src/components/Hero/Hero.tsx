@@ -31,19 +31,21 @@ const Hero = (props: Props) => {
             {" "}
             Hack-a- <br /> preneur
           </span>
-          <button
-            className="font-sans flex items-center justify-center gap-2 bg-[#5c35d156] w-full text-white text-lg font-medium
-           rounded-full px-3 py-1 mt-8 hover:shadow-md hover:shadow-[#9179da56] active:shadow-none "
-          >
-            <BsDiscord />
-            Join Discord{" "}
-          </button>
-          <div className="flex items-center justify-center gap-2 rounded-full px-3 py-1 mt-8 hover:shadow-md hover:shadow-[#9179da56] active:shadow-none h-[35px] overflow-hidden bg-[#B3CEFF] cursor-pointer btnani w-full ">
+          <div className="flex items-center justify-center gap-2 mt-4 w-full">
+            <button
+              className="font-sans flex items-center justify-center h-[44px] gap-2 bg-[#5c35d156]  text-white text-lg font-medium w-[312px]
+           rounded-[4px] px-3 py-1 mt-8 hover:shadow-md hover:shadow-[#9179da56] active:shadow-none "
+            >
+              <BsDiscord />
+              Join Discord{" "}
+            </button>
+          </div>
+          <div className="flex items-center justify-center gap-2 mt-4 w-full ">
             <div
               className="apply-button"
               data-hackathon-slug="hackaprenuer"
               data-button-theme="light"
-              style={{ height: 40 + "px", width: 312 + "px" }}
+              style={{ height: 44 + "px", width: 312 + "px" }}
             ></div>
           </div>
         </div>

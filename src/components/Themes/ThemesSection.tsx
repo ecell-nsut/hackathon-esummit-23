@@ -20,7 +20,7 @@ const ThemesSection = (props: Props) => {
       name: "AI",
     },
     {
-      url: "/Images/ML.svg",
+      url: "/Images/ml.svg",
       name: "ML",
     },
     {
@@ -32,7 +32,7 @@ const ThemesSection = (props: Props) => {
       name: "AI",
     },
     {
-      url: "/Images/ML.svg",
+      url: "/Images/ml.svg",
       name: "ML",
     },
     {
