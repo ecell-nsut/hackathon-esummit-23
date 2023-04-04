@@ -14,14 +14,13 @@ const About = (props: Props) => {
           <span className="bg-gradient-to-tr from-purple-500 font-medium text-2xl text-transparent to-teal-500 bg-clip-text">
             About
           </span>
-          <h2 className="text-4xl text-white mt-3">Hack-a-Preneur</h2>
+          <h2 className="text-4xl text-white mt-3"> InnovateX</h2>
           <p className="text-gray-500 leading-8 text-lg mt-7">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don&rsquo;t look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum, you
-            need to be sure there isn&rsquo;t anything embarrassing hidden in
-            the middle of text
+            InnovateX is one of our massively successful flagship events that
+            focuses on combining the strengths of finance, economics and
+            technology to bring creative solutions combating the lack of
+            knowledge in these fields towards an improved future that benefits
+            all.
           </p>
         </div>
         <div className="image max-w-[500px]  flex justify-center text-center  bg-cover contrast-[1.1]">
@@ -41,14 +40,14 @@ const About = (props: Props) => {
           <span className="bg-gradient-to-tr from-purple-500 font-medium text-2xl text-transparent to-teal-500 bg-clip-text">
             About
           </span>
-          <h2 className="text-4xl text-white mt-3">E-Cell</h2>
+          <h2 className="text-4xl text-white mt-3">Hack-a-Preneur</h2>
           <p className="text-gray-500 leading-8 text-lg mt-7">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don&rsquo;t look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum, you
-            need to be sure there isn&rsquo;t anything embarrassing hidden in
-            the middle of text
+            Hack-a-preneur acts as a powerful platform for college students to
+            converge their ideas relating to entrepreneurship and coding to
+            arrive at workable solutions mapped onto the practical mechanisation
+            of our society. This 36-hour conquest returns this year with a bang
+            to ensure which syntax gets in tandem with concepts of
+            entrepreneurship as per the given problem statements.
           </p>
         </div>
         <div className="image max-w-[500px]  grid grid-cols-2 gap-4 grid-rows-2 justify-center text-center bg-logoBg bg-cover">
