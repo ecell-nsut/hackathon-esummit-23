@@ -43,7 +43,7 @@ const Hero = (props: Props) => {
           <div className="flex items-center justify-center gap-2 mt-4 w-full ">
             <div
               className="apply-button"
-              data-hackathon-slug="hackaprenuer"
+              data-hackathon-slug="hackaprenuer-2023"
               data-button-theme="light"
               style={{ height: 44 + "px", width: 312 + "px" }}
             ></div>
