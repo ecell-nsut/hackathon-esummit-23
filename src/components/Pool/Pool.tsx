@@ -14,7 +14,8 @@ export default function Pool() {
         <h1
           className={`${bungee.className} text-center text-5xl md:text-6xl    text-transparent bg-gradient-to-r mb-6 from-[#FFD700] to-[#F8EA8C] bg-clip-text`}
         >
-          ₹ 30,000
+          coming soon
+          {/*₹ 30,000*/}
         </h1>
         Cash + Kind
         <a href="#about">
