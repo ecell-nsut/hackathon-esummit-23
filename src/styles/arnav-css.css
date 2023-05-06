@@ -1,0 +1,82 @@
+.pool-box {
+  max-width: 900px;
+  width: 80%;
+  min-height: 400px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#pool,
+#faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.faq-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+}
+
+.faq-container .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-container .col .row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: top;
+}
+
+#dropwdown {
+  flex: 1;
+}
+
+#dropdown * {
+  color: white;
+}
+
+#dropdown #title,
+.hidden-content-default {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.hidden-content-default {
+  padding-top: 10px;
+}
+
+#dropdown #title .right {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  padding-left: 5px;
+}
+
+#dropdown #title .right p {
+  width: fit-content;
+}
+
+#dropwdown hr {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .faq-container {
+    display: block;
+  }
+  .faq-container .col .row {
+    padding: 10px;
+  }
+}
