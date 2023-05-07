@@ -2,8 +2,10 @@ import { Inter } from "@next/font/google";
 import Head from "next/head";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
+import Faq from "../components/Faq/Faq";
 import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
+import Pool from "../components/Pool/Pool";
 import Schedule from "../components/Schedule/schedule";
 import Sponse from "../components/Sponser/Sponse";
 import ThemesSection from "../components/Themes/ThemesSection";
@@ -19,6 +21,8 @@ export default function Home() {
       <About />
       <ThemesSection />
       <Schedule />
+      <Pool />
+      <Faq />
       <Sponse />
       <Contact />
       <Footer />
