@@ -4,7 +4,6 @@ import Dropdown from "./useDropdown";
 const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400" });
 
 export default function Faq() {
-
   const faq = [
     [
       "How much does it cost to participate?",
@@ -27,10 +26,7 @@ export default function Faq() {
       "Are you required to be enrolled in a degree program?",
       "Yes, you are required to be enrolled in degree program in order to participate in the hackathon as student.",
     ],
-    [
-      "Have more questions?",
-      "Contact us",
-    ],
+    ["Have more questions?", "Contact us"],
   ];
 
   return (

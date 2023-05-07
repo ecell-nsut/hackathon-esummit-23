@@ -14,10 +14,10 @@ import tracks from "../../data/tracks";
 import { TrackInfoProps } from "../../types";
 import Link from "next/link";
 
-const bungee=Bungee_Inline({ subsets: ["latin"], weight: "400" });
-type Props={};
+const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400" });
+type Props = {};
 
-const ThemesSection=(props: Props) => {
+const ThemesSection = (props: Props) => {
   return (
     <div className=" m-auto flex flex-col py-10 px-4" id="tracks">
       <h1

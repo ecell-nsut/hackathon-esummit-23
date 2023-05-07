@@ -18,7 +18,11 @@ export default function Pool() {
           40 Lakh+
         </h1>
         Cash + Kind
-        <a href="https://hackaprenuer-2023.devfolio.co" target="_blank" rel="noreferrer">
+        <a
+          href="https://hackaprenuer-2023.devfolio.co"
+          target="_blank"
+          rel="noreferrer"
+        >
           <button
             style={{
               borderRadius: 20,
