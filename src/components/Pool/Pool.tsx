@@ -14,11 +14,11 @@ export default function Pool() {
         <h1
           className={`${bungee.className} text-center text-5xl md:text-6xl    text-transparent bg-gradient-to-r mb-6 from-[#FFD700] to-[#F8EA8C] bg-clip-text`}
         >
-          coming soon
-          {/*₹ 30,000*/}
+          {/* coming soon */}
+          40 Lakh+
         </h1>
         Cash + Kind
-        <a href="#about">
+        <a href="https://hackaprenuer-2023.devfolio.co" target="_blank" rel="noreferrer">
           <button
             style={{
               borderRadius: 20,
