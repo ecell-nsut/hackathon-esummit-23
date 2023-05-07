@@ -7,32 +7,28 @@ import { useEffect, useState } from "react";
 import Loading from "../components/Layout/loader";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
 
-  const router=useRouter();
+  const [isLoading, setIsLoading] = useState(false);
 
-  const [isLoading, setIsLoading]=useState(false);
+  useEffect(() => {
+    const handleStart = () => setIsLoading(true);
+    const handleComplete = () => setIsLoading(false);
 
-  useEffect(
-    () => {
-      const handleStart=() => setIsLoading(true);
-      const handleComplete=() => setIsLoading(false);
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
 
-      router.events.on("routeChangeStart", handleStart);
-      router.events.on("routeChangeComplete", handleComplete);
-      router.events.on("routeChangeError", handleComplete);
-
-      return () => {
-        router.events.off("routeChangeStart", handleStart);
-        router.events.off("routeChangeComplete", handleComplete);
-        router.events.off("routeChangeError", handleComplete);
-      };
-    },
-    [router]
-  );
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
+    };
+  }, [router]);
 
   return (
     <Layout>
-      {isLoading&&<Loading />}
+      {isLoading && <Loading />}
       <Component {...pageProps} />
     </Layout>
   );

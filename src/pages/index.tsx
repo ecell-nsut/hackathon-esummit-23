@@ -9,7 +9,8 @@ import Pool from "../components/Pool/Pool";
 import Schedule from "../components/Schedule/schedule";
 import Sponse from "../components/Sponser/Sponse";
 import ThemesSection from "../components/Themes/ThemesSection";
-const inter=Inter({ subsets: ["latin"] });
+import Speakers from "../components/Speakers/Speakers";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -22,7 +23,8 @@ export default function Home() {
       <ThemesSection />
       <Schedule />
       <Pool />
-      <Faq /> 
+      <Speakers />
+      <Faq />
       <Sponse />
       <Contact />
       <Footer />

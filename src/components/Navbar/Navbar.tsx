@@ -5,6 +5,7 @@ import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import eLogo from "/public/Images/elogo.svg";
 import Logo from "/public/Images/logo.svg";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"], weight: "400" });
 
@@ -29,19 +30,19 @@ const Navbar = (props: Props) => {
           className={`sm:flex hidden nav-links  grow justify-around text-md text-white  ${inter.className}`}
         >
           <li>
-            <a href="#about">About Us</a>
+            <Link href="/#about">About Us</Link>
           </li>
           <li>
-            <a href="#sponser"> Sponsors</a>
+            <Link href="/#sponser"> Sponsors</Link>
           </li>
           <li>
-            <a href="#timeline">TimeLine</a>
+            <Link href="/#timeline">TimeLine</Link>
           </li>
           <li>
-            <a href="#tracks">Tracks</a>
+            <Link href="/#tracks">Tracks</Link>
           </li>
           <li>
-            <a href="#contact">Contact Us</a>
+            <Link href="/#contact">Contact Us</Link>
           </li>
         </ul>
         <div

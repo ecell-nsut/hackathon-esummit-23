@@ -1,6 +1,6 @@
 import { TrackInfoProps } from "../types";
 
-const tracks: TrackInfoProps[]=[
+const tracks: TrackInfoProps[] = [
   {
     image: "/Images/ai.svg",
     title: "AI",
