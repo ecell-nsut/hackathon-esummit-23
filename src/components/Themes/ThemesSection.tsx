@@ -10,49 +10,14 @@ import { Bungee_Inline } from "@next/font/google";
 import { A11y, Autoplay, Navigation } from "swiper";
 import { SwiperButtonNxt, SwiperButtonPre } from "./SwiperButton";
 import ThemeCard from "./ThemeCard";
-const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400" });
-type Props = {};
+import tracks from "../../data/tracks";
+import { TrackInfoProps } from "../../types";
+import Link from "next/link";
 
-const ThemesSection = (props: Props) => {
-  const slides = [
-    {
-      url: "/Images/ai.svg",
-      name: "AI",
-    },
-    {
-      url: "/Images/ml.svg",
-      name: "ML",
-    },
-    {
-      url: "/Images/iot.svg",
-      name: "IOT",
-    },
-    {
-      url: "/Images/ai.svg",
-      name: "AI",
-    },
-    {
-      url: "/Images/ml.svg",
-      name: "ML",
-    },
-    {
-      url: "/Images/iot.svg",
-      name: "IOT",
-    },
-    {
-      url: "/Images/ai.svg",
-      name: "AI",
-    },
-    {
-      url: "/Images/ML.svg",
-      name: "ML",
-    },
-    {
-      url: "/Images/iot.svg",
-      name: "IOT",
-    },
-  ];
+const bungee=Bungee_Inline({ subsets: ["latin"], weight: "400" });
+type Props={};
 
+const ThemesSection=(props: Props) => {
   return (
     <div className=" m-auto flex flex-col py-10 px-4" id="tracks">
       <h1
@@ -97,12 +62,14 @@ const ThemesSection = (props: Props) => {
           <div className=" absolute z-10 top-0 right-0 h-full flex">
             <SwiperButtonNxt className={"w-[60px]"} />
           </div>
-          {slides.map((sld: any, i: any) => {
+          {tracks.map((sld: TrackInfoProps, i: any) => {
             return (
               <SwiperSlide key={i}>
-                <div className="flex justify-center">
-                  <ThemeCard src={sld.url} name={sld.name} />
-                </div>
+                <Link href={`/tracks/${sld.slug}`}>
+                  <div className="flex justify-center">
+                    <ThemeCard src={sld.image} name={sld.title} />
+                  </div>
+                </Link>
               </SwiperSlide>
             );
           })}

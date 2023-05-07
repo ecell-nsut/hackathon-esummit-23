@@ -1,29 +1,29 @@
 import { Bungee_Inline } from "@next/font/google";
 import { useEffect, useState } from "react";
 
-const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400" });
+const bungee=Bungee_Inline({ subsets: ["latin"], weight: "400" });
 
 export default function Dropdown(props: {
   title: string;
   description: string;
 }) {
-  const [show, setShow] = useState(false);
-  const [deg, setDeg] = useState(0);
-  const [height, setHeight] = useState(0);
+  const [show, setShow]=useState(false);
+  const [deg, setDeg]=useState(0);
+  const [height, setHeight]=useState(0);
   useEffect(() => {
     setHeight(
       document.getElementById(
-        `hidden-content-${props.title!.replaceAll(" ", "-")}`
+        `hidden-content-${props.title.replaceAll(" ", "-")}`
       )!.offsetHeight
     );
   }, []);
   return (
-    <div id="dropdown">
+    <div>
       <p
         style={{ fontSize: 15.3, cursor: "pointer" }}
         onClick={() => {
           setShow(!show);
-          setDeg(deg + 45);
+          setDeg(deg+45);
         }}
         id="title"
         className={`${bungee.className} text-1xl md:text-2xl     text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text`}
@@ -38,7 +38,7 @@ export default function Dropdown(props: {
             }}
             onClick={() => {
               setShow(!show);
-              setDeg(deg + 45);
+              setDeg(deg+45);
             }}
           >
             +
@@ -48,7 +48,7 @@ export default function Dropdown(props: {
       <hr></hr>
       <p
         style={{
-          height: show ? `${height}px` : "0px",
+          height: show? `${height}px`:"0px",
           overflow: "hidden",
           transition: "height 1s",
         }}
@@ -63,3 +63,56 @@ export default function Dropdown(props: {
     </div>
   );
 }
+
+
+// const Dropdown=(props: {
+//   title: string;
+//   description: string;
+// }) => {
+//   const [isOpen, setIsOpen]=useState(false);
+//   const [deg, setDeg]=useState(0);
+
+//   const toggleOpen=() => {
+//     setIsOpen(!isOpen);
+//     setDeg(deg => deg+45);
+//   };
+
+//   return (
+//     <div>
+//       <p
+//         style={{ fontSize: 15.3, cursor: "pointer" }}
+//         onClick={toggleOpen}
+//         className={`${bungee.className} text-1xl md:text-2xl text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text`}
+//       >
+//         {props.title}
+//         <div className="right">
+//           <p
+//             style={{
+//               cursor: "pointer",
+//               transform: `rotate(${deg}deg)`,
+//               transition: "transform 1s",
+//             }}
+//             onClick={toggleOpen}
+//           >
+//             +
+//           </p>
+//         </div>
+//       </p>
+//       <hr />
+//       <div
+//         style={{
+//           overflow: "hidden",
+//           transition: "height 1s",
+//         }}
+//       >
+//         <p
+//           className={isOpen? 'block':'hidden'}
+//         >
+//           {props.description}
+//         </p>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Dropdown;
