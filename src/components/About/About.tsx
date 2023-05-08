@@ -23,11 +23,15 @@ const About = (props: Props) => {
             all.
           </p>
         </div>
-        <div className="image max-w-[500px]  flex justify-center text-center  bg-cover contrast-[1.1]">
+        <div
+          className="image max-w-[500px]  flex justify-center text-center  bg-cover contrast-[1.1]"
+          style={{ position: "relative" }}
+        >
           <Image
             src={bgLogo}
             alt=""
-            className="absolute w-full h-full opacity-10 scale-125"
+            style={{ position: "absolute" }}
+            className="w-full h-full opacity-10 scale-125"
           />
           <Image src={AboutImg} alt="abt-img" className="z-10" />
         </div>
