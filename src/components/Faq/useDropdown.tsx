@@ -34,7 +34,7 @@ export default function Dropdown(props: {
             style={{
               cursor: "pointer",
               transform: `rotate(${deg}deg)`,
-              transition: "transform 1s",
+              transition: "transform 0.5s",
             }}
             onClick={() => {
               setShow(!show);
@@ -50,7 +50,7 @@ export default function Dropdown(props: {
         style={{
           height: show ? `${height}px` : "0px",
           overflow: "hidden",
-          transition: "height 1s",
+          transition: "height 0.5s",
         }}
       >
         <p

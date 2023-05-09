@@ -6,10 +6,12 @@ import { AiOutlineMenu } from "react-icons/ai";
 import eLogo from "/public/Images/elogo.svg";
 import Logo from "/public/Images/logo.svg";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"], weight: "400" });
 
 const Navbar = (props: Props) => {
+  const router = useRouter();
   const [showmenu, setShowMenu] = useState(false);
 
   return (
@@ -30,19 +32,89 @@ const Navbar = (props: Props) => {
           className={`sm:flex hidden nav-links  grow justify-around text-md text-white  ${inter.className}`}
         >
           <li>
-            <Link href="/#about">About Us</Link>
+            <a
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+              }}
+              href="#about"
+            >
+              About Us
+            </a>
           </li>
           <li>
-            <Link href="/#sponser"> Sponsors</Link>
+            <a
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+              }}
+              href="#sponser"
+            >
+              {" "}
+              Sponsors
+            </a>
           </li>
           <li>
-            <Link href="/#timeline">TimeLine</Link>
+            <a
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+              }}
+              href="#timeline"
+            >
+              TimeLine
+            </a>
           </li>
           <li>
-            <Link href="/#tracks">Tracks</Link>
+            <a
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+              }}
+              href="#tracks"
+            >
+              Tracks
+            </a>
           </li>
           <li>
-            <Link href="/#contact">Contact Us</Link>
+            <a
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+              }}
+              href="#speakers"
+            >
+              Speakers
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+              }}
+              href="#faq"
+            >
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+              }}
+              href="#contact"
+            >
+              Contact Us
+            </a>
           </li>
         </ul>
         <div
@@ -61,28 +133,94 @@ const Navbar = (props: Props) => {
       >
         <ul className="flex-col items-center flex  justify-between py-6 h-full  text-white font-semibold ">
           <li className="hover:scale-105 duration-150  transition-all">
-            <a onClick={() => setShowMenu(false)} href="#about">
+            <a
+              href="#about"
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+                setShowMenu(false);
+              }}
+            >
               About Us
             </a>
           </li>
           <li className="hover:scale-105 duration-150  transition-all">
-            <a onClick={() => setShowMenu(false)} href="#sponser">
+            <a
+              href="#sponser"
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+                setShowMenu(false);
+              }}
+            >
               {" "}
               Sponsors
             </a>
           </li>
           <li className="hover:scale-105 duration-150  transition-all">
-            <a onClick={() => setShowMenu(false)} href="#timeline">
+            <a
+              href="#timeline"
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+                setShowMenu(false);
+              }}
+            >
               TimeLine
             </a>
           </li>
           <li className="hover:scale-105 duration-150  transition-all">
-            <a onClick={() => setShowMenu(false)} href="#tracks">
+            <a
+              href="#tracks"
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+                setShowMenu(false);
+              }}
+            >
               Tracks
             </a>
           </li>
           <li className="hover:scale-105 duration-150  transition-all">
-            <a onClick={() => setShowMenu(false)} href="#contact">
+            <a
+              href="#speakers"
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+                setShowMenu(false);
+              }}
+            >
+              Speakers
+            </a>
+          </li>
+          <li className="hover:scale-105 duration-150  transition-all">
+            <a
+              href="#faq"
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+                setShowMenu(false);
+              }}
+            >
+              FAQ
+            </a>
+          </li>
+          <li className="hover:scale-105 duration-150  transition-all">
+            <a
+              href="#contact"
+              onClick={() => {
+                if (router.pathname != "/") {
+                  router.push("/");
+                }
+                setShowMenu(false);
+              }}
+            >
               Contact Us
             </a>
           </li>
