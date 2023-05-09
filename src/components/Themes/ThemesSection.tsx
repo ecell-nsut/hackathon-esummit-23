@@ -19,13 +19,13 @@ type Props = {};
 
 const ThemesSection = (props: Props) => {
   return (
-    <div className=" m-auto flex flex-col py-10 px-4" id="tracks">
+    <div className="min-h-screen m-auto flex flex-col py-10 px-4" id="tracks">
       <h1
-        className={`${bungee.className} text-center my-24 text-4xl md:text-4xl    text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text`}
+        className={`${bungee.className} text-center my-24 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text mb-32`}
       >
         Themes
       </h1>
-      <div className="w-full">
+      <div className="w-full px-4">
         <Swiper
           loop={true}
           slidesPerView="auto"
