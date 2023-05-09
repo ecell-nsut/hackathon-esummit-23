@@ -3,6 +3,7 @@ import { Bungee_Inline, Orbitron } from "@next/font/google";
 import Image from "next/image";
 import { useEffect } from "react";
 import { BsDiscord } from "react-icons/bs";
+import { SiHackaday } from "react-icons/si";
 import HeroImg from "/public/Images/HeroImage.svg";
 import BgLogo from "/public/Images/logo.svg";
 const orbitron = Orbitron({ subsets: ["latin"] });
@@ -28,17 +29,34 @@ const Hero = (props: Props) => {
           Welcome <br />
           To <br />
           <span className="text-white">
-            {" "}
             Hack-a- <br /> preneur
           </span>
-          <div className="flex items-center justify-center gap-2 mt-4 w-full">
-            <button
+          <div
+            className="flex items-center justify-center gap-2 mt-4 w-full"
+            style={{ marginBottom: 0 }}
+          >
+            <a
+              href="https://hackaprenuer-2023.devfolio.co/"
+              className="font-sans flex items-center justify-center h-[44px] gap-2 bg-[#5c35d156]  text-white text-lg font-medium w-[312px]
+           rounded-[4px] px-3 py-1 mt-8 hover:shadow-md hover:shadow-[#9179da56] active:shadow-none "
+            >
+              <SiHackaday></SiHackaday>
+              Register
+            </a>
+          </div>
+          <div
+            className="flex items-center justify-center gap-2 mt-4 w-full"
+            style={{ marginTop: 0 }}
+          >
+            <a
+              style={{ marginTop: "1rem" }}
+              href="https://discord.com/invite/8zmXjaz9TS"
               className="font-sans flex items-center justify-center h-[44px] gap-2 bg-[#5c35d156]  text-white text-lg font-medium w-[312px]
            rounded-[4px] px-3 py-1 mt-8 hover:shadow-md hover:shadow-[#9179da56] active:shadow-none "
             >
               <BsDiscord />
-              Join Discord{" "}
-            </button>
+              Join Discord
+            </a>
           </div>
           <div className="flex items-center justify-center gap-2 mt-4 w-full ">
             <div

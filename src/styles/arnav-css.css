@@ -10,6 +10,7 @@
 }
 
 #pool,
+#speakers,
 #faq {
   display: flex;
   align-items: center;
