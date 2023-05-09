@@ -24,8 +24,8 @@ export default function Home() {
       <Schedule />
       <Pool />
       <Speakers />
-      <Faq />
       <Sponse />
+      <Faq />
       <Contact />
       <Footer />
     </div>
