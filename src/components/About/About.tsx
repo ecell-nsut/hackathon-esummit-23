@@ -49,7 +49,7 @@ const About = (props: Props) => {
             Hack-a-preneur acts as a powerful platform for college students to
             converge their ideas relating to entrepreneurship and coding to
             arrive at workable solutions mapped onto the practical mechanisation
-            of our society. This 24-hour conquest returns this year with a bang
+            of our society. This 30-hour conquest returns this year with a bang
             to ensure which syntax gets in tandem with concepts of
             entrepreneurship as per the given problem statements.
           </p>

@@ -23,7 +23,7 @@ export default function Home() {
       <ThemesSection />
       <Schedule />
       <Pool />
-      <Speakers />
+      {/* <Speakers /> */}
       <Faq />
       <Sponse />
       <Contact />
