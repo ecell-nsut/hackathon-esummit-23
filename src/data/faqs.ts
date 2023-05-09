@@ -3,7 +3,7 @@ import { FaqInfo } from "../types";
 const faqs: FaqInfo[]=[
   {
     question: "What is Hack-a-preneur?",
-    answer: "Hack-a-preneur is a 24-hour hackathon where you can build your ideas into reality. It is a platform for you to showcase your skills and creativity. It is a place where you can meet like-minded people and build something amazing together.",
+    answer: "Hack-a-preneur is a 30-hour hackathon where you can build your ideas into reality. It is a platform for you to showcase your skills and creativity. It is a place where you can meet like-minded people and build something amazing together.",
   },
   {
     question: "How much does it cost to participate?",
