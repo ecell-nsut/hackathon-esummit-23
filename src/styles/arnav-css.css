@@ -81,3 +81,21 @@
     padding: 10px;
   }
 }
+
+.sponsor-grid {
+  display: grid;
+  text-align: center;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 100px;
+}
+
+#sponsor-grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsi-img {
+  max-height: 80px;
+}

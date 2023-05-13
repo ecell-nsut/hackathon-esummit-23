@@ -1,64 +1,64 @@
-import { SpeakerOrJudgeInfo } from '../types';
-import eCellLogo from '../../public/Images/ecelllogo.png';
+import { SpeakerOrJudgeInfo } from "../types";
+import eCellLogo from "../../public/Images/ecelllogo.svg";
 
-const speakersAndJudges: SpeakerOrJudgeInfo[]=[
+const speakersAndJudges: SpeakerOrJudgeInfo[] = [
   {
-    name: 'Name',
+    name: "Name",
     about:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: eCellLogo,
-    industry: 'Industry',
+    industry: "Industry",
     socials: {
-      linkedIn: 'https://www.linkedin.com/',
-      twitter: 'https://twitter.com/',
-      github: 'https://www.facebook.com/',
-      instagram: 'https://www.instagram.com/',
-    }
+      linkedIn: "https://www.linkedin.com/",
+      twitter: "https://twitter.com/",
+      github: "https://www.facebook.com/",
+      instagram: "https://www.instagram.com/",
+    },
   },
   {
-    name: 'Name',
+    name: "Name",
     about:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: eCellLogo,
-    industry: 'Industry',
+    industry: "Industry",
     socials: {
-      linkedIn: 'https://www.linkedin.com/',
-      twitter: 'https://twitter.com/',
-      instagram: 'https://www.instagram.com/',
-    }
+      linkedIn: "https://www.linkedin.com/",
+      twitter: "https://twitter.com/",
+      instagram: "https://www.instagram.com/",
+    },
   },
   {
-    name: 'Name',
+    name: "Name",
     about:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: eCellLogo,
-    industry: 'Industry',
+    industry: "Industry",
     socials: {
-      linkedIn: 'https://www.linkedin.com/',
-      twitter: 'https://twitter.com/',
-    }
+      linkedIn: "https://www.linkedin.com/",
+      twitter: "https://twitter.com/",
+    },
   },
   {
-    name: 'Name',
+    name: "Name",
     about:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: eCellLogo,
-    industry: 'Industry',
+    industry: "Industry",
     socials: {
-      linkedIn: 'https://www.linkedin.com/',
-      twitter: 'https://twitter.com/',
-    }
+      linkedIn: "https://www.linkedin.com/",
+      twitter: "https://twitter.com/",
+    },
   },
   {
-    name: 'Name',
+    name: "Name",
     about:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: eCellLogo,
-    industry: 'Industry',
+    industry: "Industry",
     socials: {
-      instagram: 'https://www.instagram.com/',
-    }
+      instagram: "https://www.instagram.com/",
+    },
   },
-]
+];
 
 export default speakersAndJudges;

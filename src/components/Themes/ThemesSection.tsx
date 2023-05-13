@@ -13,6 +13,7 @@ import ThemeCard from "./ThemeCard";
 import tracks from "../../data/tracks";
 import { TrackInfoProps } from "../../types";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400" });
 type Props = {};
@@ -28,7 +29,9 @@ const ThemesSection = (props: Props) => {
       <div className="w-full px-4">
         <Swiper
           loop={true}
-          centeredSlides={false}
+          slidesPerView="auto"
+          centeredSlides={true}
+          spaceBetween={30}
           grabCursor={true}
           breakpoints={{
             100: {
