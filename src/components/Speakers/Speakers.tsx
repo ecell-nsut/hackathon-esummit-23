@@ -1,8 +1,8 @@
-import { Bungee_Inline } from "@next/font/google";
 import Image from "next/image";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import speakersAndJudges from "../../data/speakerAndJudges";
 import { SpeakerOrJudgeInfo } from "../../types";
+import { Bungee_Inline } from "@next/font/google";
 
 const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400" });
 
@@ -41,9 +41,11 @@ export default function Speakers() {
                 >
                   {speakerOrJudge.name}
                 </p>
-                <p style={{ marginBottom: 24, fontSize: 15.3 }}>
-                  {speakerOrJudge.industry}
-                </p>
+                {speakerOrJudge.industry && (
+                  <p style={{ marginBottom: 24, fontSize: 15.3 }}>
+                    {speakerOrJudge.industry}
+                  </p>
+                )}
                 <p style={{ margin: 10, marginBottom: 20 }}>
                   {speakerOrJudge.about}
                 </p>

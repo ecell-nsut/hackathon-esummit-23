@@ -14,7 +14,7 @@ export interface SpeakerOrJudgeInfo {
   name: string;
   about: string;
   image: string | StaticImageData;
-  industry: string;
+  industry?: string;
   socials?: {
     linkedIn?: string;
     twitter?: string;

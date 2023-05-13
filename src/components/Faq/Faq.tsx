@@ -7,7 +7,7 @@ const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400" });
 
 export default function Faq() {
   return (
-    <div className="max-w-7xl min-h-[80vh] mx-auto" id="faq">
+    <div className="max-w-7xl mx-auto" id="faq" style={{ marginBottom: 240 }}>
       <h1
         className={`${bungee.className} text-center my-24 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text`}
       >

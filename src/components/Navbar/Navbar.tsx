@@ -80,7 +80,7 @@ const Navbar = (props: Props) => {
               Tracks
             </a>
           </li>
-          {/* <li>
+          <li>
             <a
               onClick={() => {
                 if (router.pathname != "/") {
@@ -91,7 +91,7 @@ const Navbar = (props: Props) => {
             >
               Speakers
             </a>
-          </li> */}
+          </li>
           <li>
             <a
               onClick={() => {
