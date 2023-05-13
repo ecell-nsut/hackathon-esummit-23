@@ -61,7 +61,7 @@ const ThemesSection = (props: Props) => {
           <div className=' absolute z-10 top-0 right-0 h-full flex'>
             <SwiperButtonNxt className={'w-[60px]'} />
           </div>
-          {tracks.map((sld: TrackInfoProps, i: any) => {
+          {tracks.map((sld: TrackInfoProps&{image: JSX.Element}, i: any) => {
             return (
               <SwiperSlide key={i}>
                 {/* <Link href={`/tracks/${sld.slug}`}> */}

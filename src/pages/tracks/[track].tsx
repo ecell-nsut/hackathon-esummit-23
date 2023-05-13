@@ -49,7 +49,7 @@ const TrackInfo: FC<TrackInfoProps> = (props) => {
 export default TrackInfo;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = tracks.map((webinar: TrackInfoProps) => ({
+  const paths = tracks.map((webinar: TrackInfoProps&{image: JSX.Element}) => ({
     params: {
       track: webinar.slug,
     },
@@ -65,9 +65,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const track = (params as ParsedUrlQuery & { track: string }).track;
 
   for (let i = 0; i < tracks.length; i++) {
-    if (tracks[i].slug === track) {
+    if (tracks[i].slug===track) {
+      const {image, ...trackInfo} = tracks[i]
       return {
-        props: tracks[i],
+        props: trackInfo,
       };
     }
   }

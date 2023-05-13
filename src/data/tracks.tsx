@@ -5,7 +5,7 @@ import { MdAttachMoney, MdCastForEducation } from 'react-icons/md'
 import { SiYoutubegaming } from 'react-icons/si'
 import { BiBrain } from 'react-icons/bi'
 
-const tracks: TrackInfoProps[] = [
+const tracks: (TrackInfoProps&{image: JSX.Element})[] = [
   {
     image: <GiArtificialIntelligence size={150} className='text-gray-400' />,
     title: 'AI',

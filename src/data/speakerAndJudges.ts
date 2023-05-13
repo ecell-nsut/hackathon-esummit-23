@@ -1,9 +1,9 @@
 import { SpeakerOrJudgeInfo } from '../types';
 import eCellLogo from '../../public/Images/ecelllogo.png';
-import taranjotSignImage from "../../public/Images/speakers/Taranjot.png";
-import agamjotSinghImage from "../../public/Images/speakers/agamjot.jpg";
-import anshSinghImage from "../../public/Images/speakers/ansh_sharma.jpg";
-import yashikaImage from "../../public/Images/speakers/yashika.png";
+import taranjotSignImage from "/public/Images/speakers/Taranjot.png";
+import agamjotSinghImage from "/public/Images/speakers/agamjot.jpg";
+import anshSinghImage from "/public/Images/speakers/ansh_sharma.jpg";
+import yashikaImage from "/public/Images/speakers/yashika.png";
 
 const speakersAndJudges: SpeakerOrJudgeInfo[]=[
   {

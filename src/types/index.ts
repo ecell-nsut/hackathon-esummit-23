@@ -7,7 +7,7 @@ export interface TrackInfoProps {
   slug: string;
   sponsor: string;
   sponsoredTrack?: boolean;
-  image: JSX.Element;
+  // image: JSX.Element;
 }
 
 export interface SpeakerOrJudgeInfo {
