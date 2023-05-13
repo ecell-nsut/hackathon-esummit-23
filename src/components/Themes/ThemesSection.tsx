@@ -28,9 +28,8 @@ const ThemesSection = (props: Props) => {
       <div className='w-full px-4'>
         <Swiper
           loop={true}
-          slidesPerView='auto'
-          centeredSlides={true}
-          spaceBetween={30}
+          centeredSlides={false}
+
           grabCursor={true}
           breakpoints={{
             100: {

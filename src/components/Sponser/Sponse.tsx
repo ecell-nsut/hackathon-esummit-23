@@ -65,6 +65,20 @@ const Sponse = () => {
                 alt="POLYGON LOGO"
               />
             </a>
+            <a
+              href="https://www.zeeve.io/"
+              target="_blank"
+              rel="noreferrer"
+              className="max-w-[400px] lg:max-w-[500px] flex justify-center w-full items-center bg-yellow-300 h-[100px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300"
+            >
+              <Image
+                src="/Images/Sponsers/Zeve_Logo-White.svg"
+                width={100}
+                height={100}
+                className=" max-w-[300px] w-[70%]"
+                alt="Zeeve LOGO"
+              />
+            </a>
           </div>
         </div>
         <div className="w-full">
@@ -116,6 +130,20 @@ const Sponse = () => {
                   height={100}
                   className="max-w-[300px] w-[70%]"
                   alt="FILECOIN LOGO"
+                />
+              </a>
+              <a
+                href="https://www.5ire.org/"
+                target="_blank"
+                rel="noreferrer"
+                className=" max-w-[400px] flex justify-center w-full items-center bg-slate-300 h-[100px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300"
+              >
+                <Image
+                  src="/Images/Sponsers/5ire_Logo-White.svg"
+                  width={100}
+                  height={100}
+                  className="max-w-[300px] w-[70%]"
+                  alt="5ire LOGO"
                 />
               </a>
             </div>
