@@ -64,11 +64,11 @@ const ThemesSection = (props: Props) => {
           {tracks.map((sld: TrackInfoProps&{image: JSX.Element}, i: any) => {
             return (
               <SwiperSlide key={i}>
-                {/* <Link href={`/tracks/${sld.slug}`}> */}
-                <div className='flex justify-center'>
-                  <ThemeCard src={sld.image} name={sld.title} />
-                </div>
-                {/* </Link> */}
+                <Link href={`/tracks/${sld.slug}`}>
+                  <div className='flex justify-center'>
+                    <ThemeCard src={sld.image} name={sld.title} />
+                  </div>
+                </Link>
               </SwiperSlide>
             )
           })}
