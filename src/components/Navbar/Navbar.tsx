@@ -80,7 +80,7 @@ const Navbar = (props: Props) => {
               Tracks
             </a>
           </li>
-          {/* <li>
+          <li>
             <a
               onClick={() => {
                 if (router.pathname != "/") {
@@ -91,7 +91,7 @@ const Navbar = (props: Props) => {
             >
               Speakers
             </a>
-          </li> */}
+          </li>
           <li>
             <a
               onClick={() => {
@@ -185,7 +185,7 @@ const Navbar = (props: Props) => {
               Tracks
             </a>
           </li>
-          {/* <li className="hover:scale-105 duration-150  transition-all">
+          <li className="hover:scale-105 duration-150  transition-all">
             <a
               href="#speakers"
               onClick={() => {
@@ -197,7 +197,7 @@ const Navbar = (props: Props) => {
             >
               Speakers
             </a>
-          </li> */}
+          </li>
           <li className="hover:scale-105 duration-150  transition-all">
             <a
               href="#faq"

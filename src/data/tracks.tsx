@@ -1,54 +1,59 @@
-import { TrackInfoProps } from "../types";
+import { TrackInfoProps } from '../types'
+import { GiArtificialIntelligence } from 'react-icons/gi'
+import { SiHiveBlockchain } from 'react-icons/si'
+import { MdAttachMoney, MdCastForEducation } from 'react-icons/md'
+import { SiYoutubegaming } from 'react-icons/si'
+import { BiBrain } from 'react-icons/bi'
 
 const tracks: TrackInfoProps[] = [
   {
-    image: "/Images/ai.svg",
-    title: "AI",
-    slug: "AI",
-    sponsor: "E-cell NSUT",
+    image: <GiArtificialIntelligence size={150} className='text-gray-400' />,
+    title: 'AI',
+    slug: 'AI',
+    sponsor: 'E-cell NSUT',
     sponsoredTrack: false,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
   },
   {
-    image: "/Images/ml.svg",
-    title: "Blockchain",
-    slug: "blockchain",
-    sponsor: "E-cell NSUT",
+    image: <SiHiveBlockchain size={150} className='text-gray-400' />,
+    title: 'Blockchain',
+    slug: 'blockchain',
+    sponsor: 'E-cell NSUT',
     sponsoredTrack: false,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
   },
   {
-    image: "/Images/Iot.svg",
-    title: "FinTech",
-    slug: "fintech",
-    sponsor: "E-cell NSUT",
+    image: <MdAttachMoney size={150} className='text-gray-400' />,
+    title: 'FinTech',
+    slug: 'fintech',
+    sponsor: 'E-cell NSUT',
     sponsoredTrack: false,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
   },
   {
-    image: "/Images/Iot.svg",
-    title: "EdTech",
-    slug: "edtech",
-    sponsor: "E-cell NSUT",
+    image: <MdCastForEducation size={150} className='text-gray-400' />,
+    title: 'EdTech',
+    slug: 'edtech',
+    sponsor: 'E-cell NSUT',
     sponsoredTrack: false,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
   },
   {
-    image: "/Images/ai.svg",
-    title: "Gaming",
-    slug: "gaming",
-    sponsor: "E-cell NSUT",
+    image: <SiYoutubegaming size={150} className='text-gray-400' />,
+    title: 'Gaming',
+    slug: 'gaming',
+    sponsor: 'E-cell NSUT',
     sponsoredTrack: false,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
   },
   {
-    image: "/Images/ai.svg",
-    title: "Creative",
-    slug: "creative",
-    sponsor: "E-cell NSUT",
+    image: <BiBrain size={150} className='text-gray-400' />,
+    title: 'Creative',
+    slug: 'creative',
+    sponsor: 'E-cell NSUT',
     sponsoredTrack: false,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
   },
-];
+]
 
-export default tracks;
+export default tracks
