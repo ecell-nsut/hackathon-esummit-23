@@ -51,4 +51,11 @@ const tracks: TrackInfoProps[] = [
   },
 ];
 
+let x = 0;
+let len = tracks.length;
+
+for (x = 0; x < len; x++) {
+  tracks.push(tracks[x]);
+}
+
 export default tracks;

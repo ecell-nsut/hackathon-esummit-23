@@ -21,7 +21,7 @@ const Hero = (props: Props) => {
     };
   }, []);
   return (
-    <div className="max-w-7xl m-auto  min-h-[80vh] flex justify-between items-center p-4 flex-col sm:flex-row my-12 gap-10">
+    <div className="max-w-7xl m-auto  min-h-[60vh] flex justify-between items-center p-4 flex-col sm:flex-row my-12 gap-10">
       <div
         className={`content ${orbitron.className} text-[57px] leading-[58px] md:text-[60px] md:leading-[60px] lg:text-[82px] text-7xl lg:leading-[82px] font-extrabold text-teal-500 `}
       >

@@ -3,7 +3,7 @@ import { Inter } from "@next/font/google";
 import Image from "next/image";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import eLogo from "/public/Images/elogo.svg";
+import eLogo from "/public/Images/logo.png";
 import Logo from "/public/Images/logo.svg";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -22,7 +22,7 @@ const Navbar = (props: Props) => {
             <Image src={Logo} alt="logo" className="h-full" />
           </div>
           <div className="logo h-20 py-1  flex flex-col ">
-            <Image src={eLogo} alt="logo" className="h-[82%] w-[90px]" />
+            <Image src={eLogo} alt="logo" className="h-[82%] w-[63px]" />
             <div className="text-[10px] text-center font-bold text-yellow-600 ">
               eCell-NSUT
             </div>
@@ -80,7 +80,7 @@ const Navbar = (props: Props) => {
               Tracks
             </a>
           </li>
-          {/* <li>
+          <li>
             <a
               onClick={() => {
                 if (router.pathname != "/") {
@@ -91,7 +91,7 @@ const Navbar = (props: Props) => {
             >
               Speakers
             </a>
-          </li> */}
+          </li>
           <li>
             <a
               onClick={() => {
@@ -185,7 +185,7 @@ const Navbar = (props: Props) => {
               Tracks
             </a>
           </li>
-          {/* <li className="hover:scale-105 duration-150  transition-all">
+          <li className="hover:scale-105 duration-150  transition-all">
             <a
               href="#speakers"
               onClick={() => {
@@ -197,7 +197,7 @@ const Navbar = (props: Props) => {
             >
               Speakers
             </a>
-          </li> */}
+          </li>
           <li className="hover:scale-105 duration-150  transition-all">
             <a
               href="#faq"
