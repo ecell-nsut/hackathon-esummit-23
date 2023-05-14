@@ -4,8 +4,9 @@ import taranjotSignImage from "/public/Images/speakers/Taranjot.png";
 import agamjotSinghImage from "/public/Images/speakers/agamjot.jpg";
 import anshSinghImage from "/public/Images/speakers/ansh_sharma.jpg";
 import yashikaImage from "/public/Images/speakers/yashika.png";
+import jayant from "/public/Images/speakers/jayant.webp";
 
-const speakersAndJudges: SpeakerOrJudgeInfo[]=[
+const speakersAndJudges: SpeakerOrJudgeInfo[] = [
   {
     name: 'Taranjot Singh',
     about:
@@ -37,6 +38,16 @@ const speakersAndJudges: SpeakerOrJudgeInfo[]=[
     }
   },
   {
+    name: "Jayant Pandey",
+    industry: "tech",
+    about:
+      "Developer Relations Manager @Zeeve | Founding Organizer @ Hack The League | Advocating Compassion-in-Tech || Zeeve",
+    image: jayant,
+    socials: {
+      linkedIn: "https://www.linkedin.com/in/jatinjpnd268/",
+    },
+  },
+  {
     name: 'Yashika Chugh',
     about:
       'Experienced marketer and partnerships expert in Web3, affiliated with Trace Network Labs and leading The Phoenix Guild Delhi Chapter. Award-winning entrepreneur from School of Future with skills in IT software solutions for businesses. Ideal for any Web3-focused hackathon.',
@@ -46,6 +57,6 @@ const speakersAndJudges: SpeakerOrJudgeInfo[]=[
       twitter: 'https://twitter.com/YashikaChugh4',
     }
   },
-]
+];
 
 export default speakersAndJudges;

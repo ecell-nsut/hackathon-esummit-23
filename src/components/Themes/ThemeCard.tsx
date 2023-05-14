@@ -10,13 +10,13 @@ type Props = {
 const ThemeCard = (props: Props) => {
   return (
     <div
-      className='w-[300px]   grid place-items-center rounded-2xl aspect-[12/16] hover:transform-none hover:contrast-100 contrast-125'
+      className='w-[300px] grid place-items-center rounded-2xl aspect-[12/16] hover:transform-none hover:contrast-100 contrast-125'
       style={{
         background:
           'linear-gradient(90deg, rgba(2,0,36,1) 1%, rgba(2,0,36,1) 3%, rgba(9,9,121,0) 100%),linear-gradient(221deg, rgba(212,140,241,1) 0%, rgba(15,219,237,1) 100%)',
       }}
     >
-      <div className='flex flex-col justify-between items-center space-y-3'>
+      <div className='flex flex-col justify-between items-center space-y-3 p-4'>
         {/* <Image width={130} height={130} src={props.src} alt="" /> */}
         {props.src}
         <span
