@@ -89,7 +89,7 @@ const Navbar = (props: Props) => {
               }}
               href="#speakers"
             >
-              Speakers
+              Mentors
             </a>
           </li>
           <li>
@@ -195,7 +195,7 @@ const Navbar = (props: Props) => {
                 setShowMenu(false);
               }}
             >
-              Speakers
+              Mentors
             </a>
           </li>
           <li className="hover:scale-105 duration-150  transition-all">

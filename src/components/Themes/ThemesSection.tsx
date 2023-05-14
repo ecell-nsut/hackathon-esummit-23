@@ -49,7 +49,15 @@ const ThemesSection = (props: Props) => {
               slidesPerView: 3,
               spaceBetween: 40,
             },
-            1259: {
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+            1400: {
+              slidesPerView: 4,
+              spaceBetween: 20
+            },
+            1650: {
               slidesPerView: 5,
               spaceBetween: 40,
             },
@@ -63,11 +71,11 @@ const ThemesSection = (props: Props) => {
           <div className=" absolute z-10 top-0 right-0 h-full flex">
             <SwiperButtonNxt className={"w-[60px]"} />
           </div>
-          {tracks.map((sld: TrackInfoProps, i: any) => {
+          {tracks.map((sld: TrackInfoProps&{image: JSX.Element}, i: any) => {
             return (
               <SwiperSlide key={i}>
                 <Link href={`/tracks/${sld.slug}`}>
-                  <div className="flex justify-center">
+                  <div className='flex justify-center'>
                     <ThemeCard src={sld.image} name={sld.title} />
                   </div>
                 </Link>
