@@ -1,11 +1,12 @@
 import { Bungee_Inline } from "@next/font/google";
 import Image from "next/image";
-import roadmap from "/public/Images/roadmap.svg";
-const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400" });
+import day1 from "/public/Images/schedule/day1.svg";
+import day2 from "/public/Images/schedule/day2.svg";
+const bungee=Bungee_Inline({ subsets: ["latin"], weight: "400" });
 
-type Props = {};
+type Props={};
 
-const Schedule = (props: Props) => {
+const Schedule=(props: Props) => {
   return (
     <div className="max-w-7xl m-auto pt-20 min-h-screen" id="timeline">
       <h1
@@ -14,8 +15,11 @@ const Schedule = (props: Props) => {
         Schedule
       </h1>
 
-      <div className="max-w-3xl m-auto px-4">
-        <Image src={roadmap} alt="rodmap" />
+      <div className="max-w-3xl flex flex-col m-auto justify-center items-center px-8 space-y-48">
+
+        <Image src={day1} alt="day 1" />
+        <Image src={day2} alt="day 2" />
+
       </div>
     </div>
   );
