@@ -50,7 +50,7 @@ const speakersAndJudges: SpeakerOrJudgeInfo[] = [
   {
     name: 'Yashika Chugh',
     about:
-      'Experienced marketer and partnerships expert in Web3, affiliated with Trace Network Labs and leading The Phoenix Guild Delhi Chapter. Award-winning entrepreneur from School of Future with skills in IT software solutions for businesses. Ideal for any Web3-focused hackathon.',
+      'Experienced Web3 marketer and partnerships expert, affiliated with Trace Network Labs, leading The Phoenix Guild Delhi Chapter. Award-winning entrepreneur from School of Future.',
     image: yashikaImage,
     industry: 'Web 3.0',
     socials: {

@@ -49,7 +49,15 @@ const ThemesSection = (props: Props) => {
               slidesPerView: 3,
               spaceBetween: 40,
             },
-            1259: {
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+            1400: {
+              slidesPerView: 4,
+              spaceBetween: 20
+            },
+            1650: {
               slidesPerView: 5,
               spaceBetween: 40,
             },
