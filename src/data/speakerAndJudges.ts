@@ -38,7 +38,7 @@ const speakersAndJudges: SpeakerOrJudgeInfo[] = [
     }
   },
   {
-    name: "Jayant Pandey",
+    name: "Jatin Pandey",
     industry: "tech",
     about:
       "Developer Relations Manager @Zeeve | Founding Organizer @ Hack The League | Advocating Compassion-in-Tech || Zeeve",
