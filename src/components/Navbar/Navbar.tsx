@@ -133,7 +133,7 @@ const Navbar = (props: Props) => {
       </div>
       <div
         className={`bg-gradient-to-r from-[#96969621] via-[#1d1111cb] to-[#96969621] ${showmenu ? "h-52" : "h-0"
-          } transition-all duration-300 rounded-lg w-full absolute top-30 overflow-hidden `}
+        } transition-all duration-300 rounded-lg w-full absolute top-30 overflow-hidden `}
       >
         <ul className="flex-col items-center flex  justify-between py-6 h-full  text-white font-semibold ">
           <li className="hover:scale-105 duration-150  transition-all">
