@@ -20,7 +20,7 @@ const Sponse = () => {
         >
           GOLD SPONSERS
         </h1>
-        <div className="sponsor-grid">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-8 sm:p-24">
           {sponsors.gold.map((e) => (
             <div id="sponsor-grid-item" key={`${sponsors.gold.indexOf(e)}`}>
               <a
@@ -48,7 +48,7 @@ const Sponse = () => {
         >
           Silver SPONSERS
         </h1>
-        <div className="sponsor-grid">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-8 sm:p-24">
           {sponsors.silver.map((e) => (
             <div id="sponsor-grid-item" key={`${sponsors.silver.indexOf(e)}`}>
               <a
