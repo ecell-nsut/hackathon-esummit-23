@@ -16,9 +16,9 @@ const TrackInfo: FC<TrackInfoProps> = (props) => {
           {props.title}
         </h1>
         <p
-          className={`text-lg sm:text-xl md:text-2xl text-justify text-gray-200 mb-12 max-w-screen-md`}
+          className={`text-lg sm:text-xl md:text-2xl  text-gray-200 mb-12 max-w-screen-md`}
         >
-          {props.description}
+          <pre className="whitespace-break-spaces">{props.description}</pre>
         </p>
 
         <div className="flex flex-col sm:flex-row space-x-0 space-y-4 sm:space-y-0 sm:space-x-4">

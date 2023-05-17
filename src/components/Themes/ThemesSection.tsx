@@ -13,14 +13,13 @@ import ThemeCard from "./ThemeCard";
 import tracks from "../../data/tracks";
 import { TrackInfoProps } from "../../types";
 import Link from "next/link";
-import { useEffect } from "react";
 
 const bungee = Bungee_Inline({ subsets: ["latin"], weight: "400" });
 type Props = {};
 
 const ThemesSection = (props: Props) => {
   return (
-    <div className="min-h-screen m-auto flex flex-col py-10 px-4" id="tracks">
+    <div className="min-h-screen m-auto flex flex-col py-10 px-4 mb-8" id="tracks">
       <h1
         className={`${bungee.className} text-center my-24 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text mb-32`}
       >
@@ -63,7 +62,7 @@ const ThemesSection = (props: Props) => {
             },
           }}
           modules={[Autoplay, Navigation, A11y]}
-          className="mySwiper "
+          className="mySwiper"
         >
           <div className=" absolute z-10 top-0 left-0 h-full flex">
             <SwiperButtonPre className={"w-[60px]"} />
@@ -71,7 +70,10 @@ const ThemesSection = (props: Props) => {
           <div className=" absolute z-10 top-0 right-0 h-full flex">
             <SwiperButtonNxt className={"w-[60px]"} />
           </div>
-          {tracks.map((sld: TrackInfoProps&{image: JSX.Element}, i: any) => {
+          {tracks.map((sld: TrackInfoProps & { image: JSX.Element }, i: any) => {
+            if(sld.sponsoredTrack){
+              return null;
+            }
             return (
               <SwiperSlide key={i}>
                 <Link href={`/tracks/${sld.slug}`}>
@@ -85,6 +87,23 @@ const ThemesSection = (props: Props) => {
         </Swiper>
       </div>
       <div className="flex w-full justify-betwen flex-wrap items-center gap-20 justify-center"></div>
+      <h1
+        className={`${bungee.className} text-center my-24 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text mb-32`}
+      >
+        Sponsored Tracks
+      </h1>
+      <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-32">
+        {tracks.map((sld: TrackInfoProps & { image: JSX.Element }, i: any) => {
+          if(!sld.sponsoredTrack){
+            return null;
+          }
+          return (
+            <Link href={`/tracks/${sld.slug}`} key={i}>
+              <ThemeCard src={sld.image} name={sld.title} />
+            </Link>
+          );
+        })}
+      </div>
     </div>
   );
 };

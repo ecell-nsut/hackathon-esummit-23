@@ -17,11 +17,11 @@ const sponsors: SponsorPops = {
       URL: "https://www.zeeve.io/",
       image: "/Images/Sponsers/Zeve_Logo-White.svg",
     },
-    {
-      name: "Tezos",
-      URL: "https://tezos.com/",
-      image: "/Images/Sponsers/tezos.png",
-    },
+    // {
+    //   name: "Tezos",
+    //   URL: "https://tezos.com/",
+    //   image: "/Images/Sponsers/tezos.png",
+    // },
     {
       name: "Quine",
       URL: "https://quine.sh/",

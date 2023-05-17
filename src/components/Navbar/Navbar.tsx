@@ -18,14 +18,19 @@ const Navbar = (props: Props) => {
     <div className="w-screen pt-6 px-2">
       <div className="max-w-7xl bg-gradient-to-r from-[#96969621] via-[#ffffff29] to-[#96969621] bg-opacity-20  h-20 m-auto  rounded-lg  flex items-center justify-between px-6">
         <div className="h-full flex justify-center ">
+
           <div className="logo h-full ">
-            <Image src={Logo} alt="logo" className="h-full" />
+            <Link href="/">
+              <Image src={Logo} alt="logo" className="h-full" />
+            </Link>
           </div>
           <div className="logo h-20 py-1  flex flex-col ">
-            <Image src={eLogo} alt="logo" className="h-[82%] w-[63px]" />
-            <div className="text-[10px] text-center font-bold text-yellow-600 ">
-              eCell-NSUT
-            </div>
+            <Link href="/">
+              <Image src={eLogo} alt="logo" className="h-[82%] w-[63px]" />
+              <div className="text-[10px] text-center font-bold text-yellow-600 ">
+                eCell-NSUT
+              </div>
+            </Link>
           </div>
         </div>
         <ul
@@ -127,9 +132,8 @@ const Navbar = (props: Props) => {
         </div>
       </div>
       <div
-        className={`bg-gradient-to-r from-[#96969621] via-[#1d1111cb] to-[#96969621] ${
-          showmenu ? "h-52" : "h-0"
-        } transition-all duration-300 rounded-lg w-full absolute top-30 overflow-hidden `}
+        className={`bg-gradient-to-r from-[#96969621] via-[#1d1111cb] to-[#96969621] ${showmenu ? "h-52" : "h-0"
+          } transition-all duration-300 rounded-lg w-full absolute top-30 overflow-hidden `}
       >
         <ul className="flex-col items-center flex  justify-between py-6 h-full  text-white font-semibold ">
           <li className="hover:scale-105 duration-150  transition-all">
