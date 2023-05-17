@@ -26,6 +26,11 @@ const faqs: FaqInfo[] = [
     answer: "You can participate alone or in a team of max 4.",
   },
   {
+    question: "Will accomodation be provided?",
+    answer:
+      "Yes, Sufficient space and matresses will be provided for participants stay in NSUT.",
+  },
+  {
     question: "Are we required to be enrolled in a degree program?",
     answer:
       "Yes, you are required to be enrolled in degree program in order to participate in the hackathon as student.",
