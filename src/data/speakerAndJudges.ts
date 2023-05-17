@@ -1,34 +1,44 @@
-import { SpeakerOrJudgeInfo } from "../types";
-import agamjot from "../../public/Images/speakers/agamjot.webp";
-import yashika from "../../public/Images/speakers/yashika.webp";
-import jayant from "../../public/Images/speakers/jayant.webp";
-import ansh from "../../public/Images/speakers/Ansh Sharma Image (1).jpg";
-import taranjot from "../../public/Images/speakers/Taranjot.png";
+import { SpeakerOrJudgeInfo } from '../types';
+import eCellLogo from '../../public/Images/ecelllogo.png';
+import taranjotSignImage from "/public/Images/speakers/Taranjot.png";
+import agamjotSinghImage from "/public/Images/speakers/agamjot.jpg";
+import anshSinghImage from "/public/Images/speakers/ansh_sharma.jpg";
+import yashikaImage from "/public/Images/speakers/yashika.png";
+import jayant from "/public/Images/speakers/jayant.webp";
 
 const speakersAndJudges: SpeakerOrJudgeInfo[] = [
   {
-    name: "Agamjot Singh",
-    industry: "MERN",
+    name: 'Taranjot Singh',
     about:
-      "This is Agam, a tech enthusiast with a passion for front-end development and Community building. With an expertise in ReactJS, i have created stunning web designs and developed user-friendly interfaces. Currently been working with Newton School as an Intern and have worked as Devrel at Keploy, Campus BUIDLer at Binance, Scalers Academy(representing 100k+ community on discord), LumosLabs. Additionally, I have Judged Hack A Miner, Ingenious Hackathon and have mentored at 15+ Hackathons, Open Source Events like GWoC'21, SWoC'21, GSSoC'22 HacktoberFest(Community Led Initiative) and for organizations like GDSC, Girscript Foundation, Script Foundation.",
-    image: agamjot,
+      `10K+ @LinkedIn | SIH 2022 Winner 🏆 | Full Stack Web Developer @Placewit 🧑‍💻 | Hack BVICAM 4.0, HackHound'23, Vihaan 6.0, CodeForGood, Smart Tank Winner 🏆 | Content Team Lead @GDSC-GTBIT ✨ | Startup Enthusiast 🚀`,
+    image: taranjotSignImage,
+    industry: 'Tech, Community Building, and Startups.',
     socials: {
-      linkedIn: "https://www.linkedin.com/in/agamjot-singh/",
-    },
+      linkedIn: 'https://www.linkedin.com/in/taranjotsingh23',
+    }
   },
   {
-    name: "Yashika Chugh",
-    industry: "Web3",
+    name: 'Ansh Sharma',
     about:
-      "I do Marketing and Partnerships with Web3 Companies. Currently associated with Trace Network Labs. Heading The Phoenix Guild Delhi Chapter. Entrepreneurs Academy graduate from the School of Future. There I built a business project in 100 days that solves a world problem. Awarded by Education Minister, Delhi State Winner (2021) and representative in World Skills Competition in IT Software Solutions for Businesses.",
-    image: yashika,
+      `ML Researcher MITACS GRI'22 @UbiLab University of Waterloo | Ex-Intern @University Malaya @IIT Delhi @IIT Bombay @bitgrit | Fmr founder @GitHub Community SRM | Hackathon Judge & Mentor | HackCBS 3.0 & HackThisFall Winner`,
+    image: anshSinghImage,
+    industry: 'ML, NLP, CV, and System Design.',
     socials: {
-      twitter:
-        "https://twitter.com/YashikaChugh4?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-    },
+      linkedIn: 'https://www.linkedin.com/in/anshsharma09/',
+    }
   },
   {
-    name: "Jayant Pandey",
+    name: 'Agamjot Singh',
+    about:
+      `Tech Intern @Newton School | Hackathons Mentor(x15) | Community Builder @LumosLabs, @Apli | FRT Intern @Microsoft | Former DevRel @Keployio | Building @CodeSetGo`,
+    image: agamjotSinghImage,
+    industry: 'MERN(frontend)',
+    socials: {
+      linkedIn: 'https://www.linkedin.com/in/agamjot-singh/',
+    }
+  },
+  {
+    name: "Jatin Pandey",
     industry: "tech",
     about:
       "Developer Relations Manager @Zeeve | Founding Organizer @ Hack The League | Advocating Compassion-in-Tech || Zeeve",
@@ -38,24 +48,14 @@ const speakersAndJudges: SpeakerOrJudgeInfo[] = [
     },
   },
   {
-    name: "Taranjot Singh",
+    name: 'Yashika Chugh',
     about:
-      "Won Smart India Hackathon 2022, Participated in 15+ Hackathons till date and Won 6+ Hackathons, Mentored at BFF Hackathon, Content Team Lead at GDSC-GTBIT, 10K+ followers on LinkedIn, Full Stack Web Developer, Startup & Entrepreneurship enthusiast.",
-    image: taranjot,
-    industry: "Web Dev",
+      'Experienced Web3 marketer and partnerships expert, affiliated with Trace Network Labs, leading The Phoenix Guild Delhi Chapter. Award-winning entrepreneur from School of Future.',
+    image: yashikaImage,
+    industry: 'Web 3.0',
     socials: {
-      linkedIn: "https://www.linkedin.com/in/taranjotsingh23/",
-    },
-  },
-  {
-    name: "Ansh Sharma",
-    about:
-      "Machine Learning Researcher at the University of Waterloo and a big open-source enthusiast who cherishes bringing together like-minded people and empowering them in their progression in the tech marathon!",
-    image: ansh,
-    industry: "Machine Learning",
-    socials: {
-      linkedIn: "https://www.linkedin.com/in/anshsharma09/",
-    },
+      twitter: 'https://twitter.com/YashikaChugh4',
+    }
   },
 ];
 
