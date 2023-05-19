@@ -13,7 +13,7 @@ export interface TrackInfoProps {
 export enum Role {
   Mentor,
   Speaker,
-  Judge
+  Judge,
 }
 
 export interface SpeakerOrJudgeInfo {

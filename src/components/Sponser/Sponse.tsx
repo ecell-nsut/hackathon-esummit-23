@@ -60,7 +60,7 @@ const Sponse = () => {
                   src={`${e.image}`}
                   width={100}
                   height={100}
-                  style={{maxHeight:120}}
+                  style={{ maxHeight: 120 }}
                   className="max-w-[300px] w-[70%] sponsi-img"
                   alt={`${e.name} Logo`}
                 />

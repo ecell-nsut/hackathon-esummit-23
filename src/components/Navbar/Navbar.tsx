@@ -18,7 +18,6 @@ const Navbar = (props: Props) => {
     <div className="px-2 pt-6 w-screen">
       <div className="max-w-7xl bg-gradient-to-r from-[#96969621] via-[#ffffff29] to-[#96969621] bg-opacity-20  h-20 m-auto  rounded-lg  flex items-center justify-between px-6 py-2">
         <div className="flex justify-center h-full">
-
           <div className="h-full logo">
             <Link href="/">
               <Image src={Logo} alt="logo" className="h-full" />
@@ -132,7 +131,8 @@ const Navbar = (props: Props) => {
         </div>
       </div>
       <div
-        className={`bg-gradient-to-r from-[#96969621] via-[#1d1111cb] to-[#96969621] ${showmenu ? "h-52" : "h-0"
+        className={`bg-gradient-to-r from-[#96969621] via-[#1d1111cb] to-[#96969621] ${
+          showmenu ? "h-52" : "h-0"
         } transition-all duration-300 rounded-lg w-full absolute top-30 overflow-hidden `}
       >
         <ul className="flex flex-col justify-between items-center py-6 h-full font-semibold text-white">
