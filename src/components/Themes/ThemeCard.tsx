@@ -16,11 +16,11 @@ const ThemeCard = (props: Props) => {
           'linear-gradient(90deg, rgba(2,0,36,1) 1%, rgba(2,0,36,1) 3%, rgba(9,9,121,0) 100%),linear-gradient(221deg, rgba(212,140,241,1) 0%, rgba(15,219,237,1) 100%)',
       }}
     >
-      <div className='flex flex-col justify-between items-center space-y-3 p-4'>
+      <div className='flex flex-col justify-between items-center p-4 space-y-3'>
         {/* <Image width={130} height={130} src={props.src} alt="" /> */}
         {props.src}
         <span
-          className={`${bungee.className} text-4xl text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text`}
+          className={`${bungee.className} text-4xl text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text break-all text-center`}
         >
           {props.name}
         </span>

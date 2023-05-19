@@ -18,9 +18,64 @@ const Sponse = () => {
         <h1
           className={`${bungee.className} text-center text-2xl md:text-3xl    text-transparent bg-gradient-to-r mb-6 from-[#FFD700] to-[#F8EA8C] bg-clip-text`}
         >
-          GOLD SPONSERS
+          TITLE SPONSORS
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-8 sm:p-24">
+        <div className="grid grid-cols-1 gap-4 p-8 sm:p-24">
+          {sponsors.title.map((e) => (
+            <div id="sponsor-grid-item" key={`${sponsors.gold.indexOf(e)}`}>
+              <a
+                href={`${e.URL}`}
+                target="_blank"
+                rel="noreferrer"
+                className="max-w-[400px] flex justify-center w-full items-center bg-slate-300 h-[200px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300"
+              >
+                <Image
+                  src={`${e.image}`}
+                  width={100}
+                  height={100}
+                  className="max-w-[300px] w-[70%] sponsi-img"
+                  alt={`${e.name} Logo`}
+                />
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="w-full" style={{ width: "100%" }}>
+        <h1
+          className={`${bungee.className} text-center text-2xl md:text-3xl text-transparent bg-gradient-to-r mb-6 from-[#FFD700] to-[#F8EA8C] bg-clip-text`}
+        >
+          CO-TITLE SPONSORS
+        </h1>
+        <div className="grid grid-cols-1 gap-4 p-8 sm:grid-cols-2 sm:p-24">
+          {sponsors.cotitle.map((e) => (
+            <div id="sponsor-grid-item" key={`${sponsors.gold.indexOf(e)}`}>
+              <a
+                href={`${e.URL}`}
+                target="_blank"
+                rel="noreferrer"
+                className="max-w-[400px] flex justify-center w-full items-center bg-slate-300 h-[200px] bg-opacity-[0.07] rounded-3xl drop-shadow-semibold hover:drop-shadow-lowGlow transition-[filter] duration-300"
+              >
+                <Image
+                  src={`${e.image}`}
+                  width={100}
+                  height={100}
+                  style={{maxHeight:120}}
+                  className="max-w-[300px] w-[70%] sponsi-img"
+                  alt={`${e.name} Logo`}
+                />
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="w-full" style={{ width: "100%" }}>
+        <h1
+          className={`${bungee.className} text-center text-2xl md:text-3xl    text-transparent bg-gradient-to-r mb-6 from-[#FFD700] to-[#F8EA8C] bg-clip-text`}
+        >
+          GOLD SPONSORS
+        </h1>
+        <div className="grid grid-cols-1 gap-4 p-8 sm:grid-cols-2 lg:grid-cols-3 sm:p-24">
           {sponsors.gold.map((e) => (
             <div id="sponsor-grid-item" key={`${sponsors.gold.indexOf(e)}`}>
               <a
@@ -46,9 +101,9 @@ const Sponse = () => {
           style={{ color: "#808080" }}
           className={`${bungee.className} text-center text-2xl md:text-3xl    text-transparent bg-gradient-to-r mb-6 from-[#738580] to-[#8A9EA0] bg-clip-text`}
         >
-          Silver SPONSERS
+          Silver SPONSORS
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-8 sm:p-24">
+        <div className="grid grid-cols-1 gap-4 p-8 sm:grid-cols-2 lg:grid-cols-3 sm:p-24">
           {sponsors.silver.map((e) => (
             <div id="sponsor-grid-item" key={`${sponsors.silver.indexOf(e)}`}>
               <a

@@ -1,6 +1,25 @@
 import { SponsorPops } from "../types";
 
 const sponsors: SponsorPops = {
+  title: [
+    {
+      name: "Top One Percent",
+      URL: "https://www.top-one-percent.com/",
+      image: "/Images/Sponsers/toponepercent.png",
+    },
+  ],
+  cotitle: [
+    {
+      name: "Orris",
+      URL: "https://www.orris.in/",
+      image: "/Images/Sponsers/orris.png",
+    },
+    {
+      name: "Hyperlane",
+      URL: "https://www.hyperlane.xyz/",
+      image: "/Images/Sponsers/hyperlane.png",
+    },
+  ],
   gold: [
     {
       name: "Devfolio",

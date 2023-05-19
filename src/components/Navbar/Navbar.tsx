@@ -15,18 +15,18 @@ const Navbar = (props: Props) => {
   const [showmenu, setShowMenu] = useState(false);
 
   return (
-    <div className="w-screen pt-6 px-2">
-      <div className="max-w-7xl bg-gradient-to-r from-[#96969621] via-[#ffffff29] to-[#96969621] bg-opacity-20  h-20 m-auto  rounded-lg  flex items-center justify-between px-6">
-        <div className="h-full flex justify-center ">
+    <div className="px-2 pt-6 w-screen">
+      <div className="max-w-7xl bg-gradient-to-r from-[#96969621] via-[#ffffff29] to-[#96969621] bg-opacity-20  h-20 m-auto  rounded-lg  flex items-center justify-between px-6 py-2">
+        <div className="flex justify-center h-full">
 
-          <div className="logo h-full ">
+          <div className="h-full logo">
             <Link href="/">
               <Image src={Logo} alt="logo" className="h-full" />
             </Link>
           </div>
-          <div className="logo h-20 py-1  flex flex-col ">
+          <div className="flex flex-col py-1 h-20 logo">
             <Link href="/">
-              <Image src={eLogo} alt="logo" className="h-[82%] w-[63px]" />
+              <Image src={eLogo} alt="logo" className="w-[45px]" />
               <div className="text-[10px] text-center font-bold text-yellow-600 ">
                 eCell-NSUT
               </div>
@@ -70,7 +70,7 @@ const Navbar = (props: Props) => {
               }}
               href="#timeline"
             >
-              TimeLine
+              Timeline
             </a>
           </li>
           <li>
@@ -123,7 +123,7 @@ const Navbar = (props: Props) => {
           </li>
         </ul>
         <div
-          className="hamburger sm:hidden cursor-pointer text-white text-3xl relative"
+          className="relative text-3xl text-white cursor-pointer hamburger sm:hidden"
           onClick={() => {
             setShowMenu(!showmenu);
           }}
@@ -135,8 +135,8 @@ const Navbar = (props: Props) => {
         className={`bg-gradient-to-r from-[#96969621] via-[#1d1111cb] to-[#96969621] ${showmenu ? "h-52" : "h-0"
         } transition-all duration-300 rounded-lg w-full absolute top-30 overflow-hidden `}
       >
-        <ul className="flex-col items-center flex  justify-between py-6 h-full  text-white font-semibold ">
-          <li className="hover:scale-105 duration-150  transition-all">
+        <ul className="flex flex-col justify-between items-center py-6 h-full font-semibold text-white">
+          <li className="transition-all duration-150 hover:scale-105">
             <a
               href="#about"
               onClick={() => {
@@ -149,7 +149,7 @@ const Navbar = (props: Props) => {
               About Us
             </a>
           </li>
-          <li className="hover:scale-105 duration-150  transition-all">
+          <li className="transition-all duration-150 hover:scale-105">
             <a
               href="#sponser"
               onClick={() => {
@@ -163,7 +163,7 @@ const Navbar = (props: Props) => {
               Sponsors
             </a>
           </li>
-          <li className="hover:scale-105 duration-150  transition-all">
+          <li className="transition-all duration-150 hover:scale-105">
             <a
               href="#timeline"
               onClick={() => {
@@ -176,7 +176,7 @@ const Navbar = (props: Props) => {
               TimeLine
             </a>
           </li>
-          <li className="hover:scale-105 duration-150  transition-all">
+          <li className="transition-all duration-150 hover:scale-105">
             <a
               href="#tracks"
               onClick={() => {
@@ -189,7 +189,7 @@ const Navbar = (props: Props) => {
               Tracks
             </a>
           </li>
-          <li className="hover:scale-105 duration-150  transition-all">
+          <li className="transition-all duration-150 hover:scale-105">
             <a
               href="#speakers"
               onClick={() => {
@@ -202,7 +202,7 @@ const Navbar = (props: Props) => {
               Mentors
             </a>
           </li>
-          <li className="hover:scale-105 duration-150  transition-all">
+          <li className="transition-all duration-150 hover:scale-105">
             <a
               href="#faq"
               onClick={() => {
@@ -215,7 +215,7 @@ const Navbar = (props: Props) => {
               FAQ
             </a>
           </li>
-          <li className="hover:scale-105 duration-150  transition-all">
+          <li className="transition-all duration-150 hover:scale-105">
             <a
               href="#contact"
               onClick={() => {

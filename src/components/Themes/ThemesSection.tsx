@@ -19,14 +19,28 @@ type Props = {};
 
 const ThemesSection = (props: Props) => {
   return (
-    <div className="min-h-screen m-auto flex flex-col py-10 px-4 mb-8" id="tracks">
+    <div
+      className="flex flex-col items-center px-4 py-10 m-auto mb-8 min-h-screen"
+      id="tracks"
+    >
       <h1
         className={`${bungee.className} text-center my-24 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text mb-32`}
       >
         Themes
       </h1>
-      <div className="w-full px-4">
-        <Swiper
+      <div className="flex flex-wrap gap-16 justify-center items-center px-4 w-full">
+        {tracks
+          .filter((track) => !track.sponsoredTrack)
+          .map((sld: TrackInfoProps & { image: JSX.Element }, i: any) => (
+            <Link
+              href={`/tracks/${sld.slug}`}
+              key={i}
+              style={{ marginLeft: 0 }}
+            >
+              <ThemeCard src={sld.image} name={sld.title} />
+            </Link>
+          ))}
+        {/* <Swiper
           loop={true}
           slidesPerView="auto"
           centeredSlides={true}
@@ -64,10 +78,10 @@ const ThemesSection = (props: Props) => {
           modules={[Autoplay, Navigation, A11y]}
           className="mySwiper"
         >
-          <div className=" absolute z-10 top-0 left-0 h-full flex">
+          <div className="flex absolute top-0 left-0 z-10 h-full">
             <SwiperButtonPre className={"w-[60px]"} />
           </div>
-          <div className=" absolute z-10 top-0 right-0 h-full flex">
+          <div className="flex absolute top-0 right-0 z-10 h-full">
             <SwiperButtonNxt className={"w-[60px]"} />
           </div>
           {tracks.map((sld: TrackInfoProps & { image: JSX.Element }, i: any) => {
@@ -84,21 +98,25 @@ const ThemesSection = (props: Props) => {
               </SwiperSlide>
             );
           })}
-        </Swiper>
+        </Swiper> */}
       </div>
-      <div className="flex w-full justify-betwen flex-wrap items-center gap-20 justify-center"></div>
+      <div className="flex flex-wrap gap-20 justify-center items-center w-full justify-betwen"></div>
       <h1
         className={`${bungee.className} text-center my-24 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text mb-32`}
       >
         Sponsored Tracks
       </h1>
-      <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-32">
+      <div className="flex flex-wrap gap-16 justify-center items-center space-y-4 sm:space-y-0 sm:space-x-32 max-w-[1200px]">
         {tracks.map((sld: TrackInfoProps & { image: JSX.Element }, i: any) => {
-          if(!sld.sponsoredTrack){
+          if (!sld.sponsoredTrack) {
             return null;
           }
           return (
-            <Link href={`/tracks/${sld.slug}`} key={i}>
+            <Link
+              href={`/tracks/${sld.slug}`}
+              key={i}
+              style={{ marginLeft: 0 }}
+            >
               <ThemeCard src={sld.image} name={sld.title} />
             </Link>
           );
