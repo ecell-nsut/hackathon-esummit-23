@@ -58,7 +58,8 @@ const speakersAndJudges: SpeakerOrJudgeInfo[] = [
   {
     name: "Lakshay Gaur",
     industry: "Blockchain",
-    about: "Blockchain Architect at Zeeve | Member of Hyperledger India Chapter",
+    about:
+      "Blockchain Architect at Zeeve | Member of Hyperledger India Chapter",
     image: lakshayImage,
     socials: {
       linkedIn: "https://www.linkedin.com/in/lakshay-gaur-2241b4146/",
@@ -89,7 +90,8 @@ const speakersAndJudges: SpeakerOrJudgeInfo[] = [
   },
   {
     name: "Himanshu Singhal",
-    about: "Esteemed professional with comprehensive industry understanding. CEO of NSUT IIF with experience collaborating with domestic and international clients.",
+    about:
+      "Esteemed professional with comprehensive industry understanding. CEO of NSUT IIF with experience collaborating with domestic and international clients.",
     image: himanshuImage,
     industry: "Tech",
     socials: {
