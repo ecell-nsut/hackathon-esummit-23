@@ -58,7 +58,7 @@ const speakersAndJudges: SpeakerOrJudgeInfo[] = [
   {
     name: "Lakshay Gaur",
     industry: "Blockchain",
-    about: "Blockchain Architect at Zeeve",
+    about: "Blockchain Architect at Zeeve | Member of Hyperledger India Chapter",
     image: lakshayImage,
     socials: {
       linkedIn: "https://www.linkedin.com/in/lakshay-gaur-2241b4146/",
@@ -89,9 +89,9 @@ const speakersAndJudges: SpeakerOrJudgeInfo[] = [
   },
   {
     name: "Himanshu Singhal",
-    about: "himanshu",
+    about: "Esteemed professional with comprehensive industry understanding. CEO of NSUT IIF with experience collaborating with domestic and international clients.",
     image: himanshuImage,
-    industry: "Web 3.0",
+    industry: "Tech",
     socials: {
       // instagram: "https://www.instagram.com/jaisadana19/",
     },
@@ -113,7 +113,7 @@ const speakersAndJudges: SpeakerOrJudgeInfo[] = [
     about:
       "Founder | Youtuber | Ex-Founding Member at Coding Ninjas | Ex- Amazon | DTU",
     image: parikhImage,
-    industry: "Tech",
+    industry: "Startup/Tech",
     socials: {
       linkedIn: "https://www.linkedin.com/in/parikh-jain-79568798/",
     },
@@ -124,7 +124,7 @@ const speakersAndJudges: SpeakerOrJudgeInfo[] = [
     about:
       'CEO & Founder- MENTORx l REVUP , 3X TEDx Speaker, Josh Speaker, GGI"s 100 Most Influential Business Women, Mentor Of Change - Niti Aayog, Government Of India',
     image: nancyImage,
-    industry: "Tech",
+    industry: "Buisness/Coaching",
     socials: {
       linkedIn: "https://www.linkedin.com/in/nancyjuneja/",
     },
