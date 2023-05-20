@@ -253,7 +253,22 @@ const tracks: (TrackInfoProps & { image: JSX.Element })[] = [
     slug: "5ire",
     sponsor: "5ireChain",
     sponsoredTrack: true,
-    description: `We're open to all kinds of projects across themes built on 5ire, but here are a few things we're actively thinking about these days in case you're looking for some inspiration:\n
+    description: `
+Prize money: $350
+\nThe prizes consist of 15,000 INR (1st Prize), 10,000 INR (2nd Prize) and 5,000 INR (3rd Prize).
+\n
+\nThe best-beginner-level projects are just starting out to build on 5ire.
+\n
+\nThe best-intermediate level projects that go into depth demonstrate higher-order code.
+\n
+\nThe best-advanced-level projects are almost ready for full-time development.
+\n
+\nThe** most promising builds** in the #ReFi, #DeFi, and #Impact space
+\n
+\nBONUS: The swag kit will be provided to anyone who builds on 5ire during the hackathon. (even if they don’t win the track prize!)
+\n
+\nThe winners will also be able to apply for internships or full-time roles at 5ireLabs (If available)
+  \nWe're open to all kinds of projects across themes built on 5ire, but here are a few things we're actively thinking about these days in case you're looking for some inspiration:\n
   \n1. DeFi. Build the next-gen financial applications for the decentralized economy.
   \n2. NFTs. Combine creativity with engineering to build awesome NFT dApps.
   \n3. Gaming. Make some fun and interactive games on the chain.
