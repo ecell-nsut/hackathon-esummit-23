@@ -67,7 +67,7 @@ const speakersAndJudges: SpeakerOrJudgeInfo[] = [
     role: Role.Speaker,
   },
   {
-    name: "B. Vekatesh",
+    name: "B. Venkatesh",
     about:
       "Web3 Developer | Technical Lead @5irechain | Founder @RapAdds | Ex-Blockchain Dev @RouterProtocol | Fellow @Polygon | Flutter Developer | Web Developer | Rapper",
     image: venkateshImage,
